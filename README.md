@@ -1649,3 +1649,56 @@ python3 maigret username
 exiftool image.jpg
 ```
 
+---
+
+# OSINT One-Liners for People Search & Email Investigation
+
+## 🔍 People Search
+
+- **Find social media profiles using name & location:**  
+  ```bash
+  site:facebook.com "John Doe" "New York"
+  ```
+- **Search for a username across multiple sites:**  
+  ```bash
+  curl -s https://usersearch.org/?q=username | grep -oP 'https?://\S+'
+  ```
+- **Check if a username exists on social networks (Sherlock):**  
+  ```bash
+  python3 sherlock username
+  ```
+- **Google dork for public records:**  
+  ```bash
+  "John Doe" site:whitepages.com OR site:spokeo.com OR site:intelius.com
+  ```
+- **Find someone’s name linked to a phone number:**  
+  ```bash
+  site:truepeoplesearch.com "123-456-7890"
+  ```
+
+## 📧 Email Investigation
+
+- **Check if an email is in a data breach (Have I Been Pwned API):**  
+  ```bash
+  curl -s "https://haveibeenpwned.com/api/v3/breachedaccount/test@example.com" -H "hibp-api-key: YOUR_API_KEY"
+  ```
+- **Find email format for a company:**  
+  ```bash
+  hunter.io "example.com"
+  ```
+- **Reverse lookup email to find associated accounts:**  
+  ```bash
+  site:linkedin.com intext:"test@example.com"
+  ```
+- **Search for email leaks using Google dorks:**  
+  ```bash
+  "test@example.com" filetype:txt OR filetype:csv OR filetype:log
+  ```
+- **Check email reputation (MXToolbox):**  
+  ```bash
+  curl -s "https://mxtoolbox.com/SuperTool.aspx?action=blacklist:test@example.com"
+  ```
+
+---
+
+
