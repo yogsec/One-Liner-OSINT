@@ -916,3 +916,71 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
+
+### 📧 Email & Contact Information
+Find all email formats used by a company:
+```bash
+site:targetcompany.com "@targetcompany.com"
+```
+
+Search for leaked emails:
+```bash
+"john.doe@email.com" site:pastebin.com | site:breachforums.st
+```
+
+### 📱 Phone Numbers & Messaging Apps
+Look for leaked phone numbers:
+```bash
+"+123456789" site:pastebin.com | site:throwbin.io
+```
+
+Find if a number is linked to Telegram:
+```bash
+site:t.me "+123456789"
+```
+
+### 🔗 Social Media & Online Presence
+Find hidden social media profiles:
+```bash
+"John Doe" site:linkedin.com | site:facebook.com | site:instagram.com
+```
+
+Locate images of a person:
+```bash
+site:instagram.com "John Doe" | site:flickr.com "John Doe"
+```
+
+### 🏢 Company Subdomains & Infrastructure
+Find all subdomains of a company:
+```bash
+site:*.targetcompany.com -www
+```
+
+Check for open directories:
+```bash
+intitle:"index of" site:targetcompany.com
+```
+
+### 🔑 API Keys & Credentials
+Find API keys leaked in GitHub repositories:
+```bash
+site:github.com "api_key" | "AWS_SECRET" | "password" targetcompany.com
+```
+
+Search for environment files:
+```bash
+site:targetcompany.com ext:env "DB_PASSWORD" | "SECRET_KEY"
+```
+
+### 🕵️ Leaks & Security Issues
+Find leaked internal documents:
+```bash
+site:targetcompany.com ext:pdf | ext:doc "confidential"
+```
+
+Look for mentions of a company in hacking forums:
+```bash
+"targetcompany.com" site:breachforums.st | site:raidforums.com
+```
+
+---
