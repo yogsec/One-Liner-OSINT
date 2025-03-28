@@ -115,24 +115,9 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   ```bash
   site:targetcompany.com inurl:CVE- | intext:"vulnerability"
   ```
-
+  
   ---
 
-  # OSINT Techniques & Google Dorking Cheatsheet
-
-## About
-This repository provides a collection of OSINT (Open Source Intelligence) techniques, Google dorking queries, and automation tools to gather publicly available information on individuals, organizations, leaked data, and more.
-
-## Contents
-- **Google Dorking**: Queries to find emails, passwords, confidential files, and open databases.
-- **People OSINT**: Techniques to discover social media profiles, track geolocation, and search leaked data.
-- **Dark Web OSINT**: Methods to find leaked credentials, exposed files, and confidential documents.
-- **Organizational OSINT**: Finding subdomains, employee details, and company vulnerabilities.
-- **OSINT Tools**: Automated tools like SpiderFoot, theHarvester, Amass, and Sherlock for data collection.
-
----
-
-## 🌐 Google Dorking for OSINT
 ### 🔍 Finding Emails & Credentials
 - **Locate Publicly Available Emails**  
   ```bash
@@ -298,4 +283,6 @@ This repository provides a collection of OSINT (Open Source Intelligence) techni
   ```
 - **Reverse Image Search on Google**  
   🔗 [Google Images](https://images.google.com)
+
+---
 
