@@ -1490,3 +1490,67 @@ exiftool image.jpg
 
 ---
 
+
+## **General Social Media Search:**  
+```bash
+# Search for a username across multiple social media platforms
+curl -s "https://usersearch.org/?q=username" | grep -Eo 'https://[a-zA-Z0-9./?=_-]+'
+```
+```bash
+# Check if a username exists on multiple sites using Sherlock
+python3 sherlock username
+```
+
+## **Twitter (X) OSINT:**  
+```bash
+# Search for tweets from a specific user containing a keyword
+curl -s "https://nitter.net/username/search?q=keyword"
+```
+```bash
+# Find all images posted by a Twitter user
+twint -u username --media
+```
+```bash
+# Search for email addresses in tweets
+twint -s "@gmail.com OR @yahoo.com OR @protonmail.com" --output emails.txt --csv
+```
+
+## **Facebook OSINT:**  
+```bash
+# Search for a Facebook profile by name
+google "site:facebook.com inurl:profile Name"
+```
+```bash
+# Find Facebook posts mentioning a keyword
+google "site:facebook.com/posts keyword"
+```
+
+## **Instagram OSINT:**  
+```bash
+# Extract Instagram user information
+instaloader --login your_username profile_username
+```
+```bash
+# Find all tagged photos of a user
+google "site:instagram.com/tagged/ username"
+```
+
+## **LinkedIn OSINT:**  
+```bash
+# Search for employees of a company
+google "site:linkedin.com/in company name"
+```
+```bash
+# Extract LinkedIn profile data
+python3 linkedin2username.py -u "Company Name"
+```
+
+## **Reddit OSINT:**  
+```bash
+# Search for a Reddit user’s posts
+google "site:reddit.com/user/username"
+```
+```bash
+# Find comments from a user
+curl -s "https://www.reddit.com/user/username/comments.json"
+```
