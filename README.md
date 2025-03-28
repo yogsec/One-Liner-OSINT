@@ -1911,3 +1911,88 @@ exiftool image.jpg
   swaks --to test@example.com --server mail.example.com --data "Subject: Test"
   ```
 
+
+- **Check if a person’s phone number is in a spam database:**  
+  ```bash
+  curl -s "https://api.callinsider.com/v1/search?number=+11234567890&apikey=YOUR_API_KEY"
+  ```
+- **Find deleted social media posts (cached Google & Bing results):**  
+  ```bash
+  cache:twitter.com/johndoe OR cache:facebook.com/johndoe
+  ```
+- **Search for user profiles in data breaches:**  
+  ```bash
+  site:haveibeenpwned.com "John Doe" OR "test@example.com"
+  ```
+- **Find out if someone has a Medium or Substack account:**  
+  ```bash
+  site:medium.com OR site:substack.com "John Doe"
+  ```
+- **Check for public Amazon wishlists linked to a name:**  
+  ```bash
+  site:amazon.com "John Doe" wishlist
+  ```
+- **Search property ownership records (USA only):**  
+  ```bash
+  site:realtor.com OR site:zillow.com "123 Main St, NY"
+  ```
+- **Check past travel history via flight logs (Private Jet owners):**  
+  ```bash
+  site:flightaware.com OR site:flightradar24.com "John Doe"
+  ```
+- **Look for someone's online dating profiles (Tinder, Bumble, etc.):**  
+  ```bash
+  site:tinder.com OR site:bumble.com "John Doe"
+  ```
+- **Find a person's reviews on websites (Amazon, Yelp, TrustPilot):**  
+  ```bash
+  site:amazon.com OR site:yelp.com OR site:trustpilot.com "John Doe"
+  ```
+- **Check if a person has been mentioned in news articles:**  
+  ```bash
+  site:bbc.com OR site:cnn.com OR site:forbes.com "John Doe"
+  ```
+
+## 📧 Email Investigation - Pro Level
+
+- **Find alternate emails linked to a domain using Hunter.io:**  
+  ```bash
+  curl -s "https://api.hunter.io/v2/domain-search?domain=example.com&api_key=YOUR_API_KEY"
+  ```
+- **Extract email addresses from a CSV file:**  
+  ```bash
+  awk -F, '{print $2}' emails.csv | grep -E -o "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+  ```
+- **Check if an email is linked to a Steam account:**  
+  ```bash
+  curl -s "https://steamcommunity.com/actions/WhoIsOnline/test@example.com"
+  ```
+- **Search old forum posts linked to an email (4chan, Reddit, etc.):**  
+  ```bash
+  site:4chan.org OR site:reddit.com "test@example.com"
+  ```
+- **Find if an email is listed in PGP key databases:**  
+  ```bash
+  gpg --search-keys test@example.com
+  ```
+- **Extract emails from a Word document (.docx):**  
+  ```bash
+  strings file.docx | grep -E -o "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+  ```
+- **Find subdomains linked to an email provider:**  
+  ```bash
+  amass enum -d example.com
+  ```
+- **Check if an email is used in crypto forums (BitcoinTalk, etc.):**  
+  ```bash
+  site:bitcointalk.org "test@example.com"
+  ```
+- **Check if an email is linked to a Patreon account:**  
+  ```bash
+  site:patreon.com "test@example.com"
+  ```
+- **Verify if an email has been involved in fraud cases:**  
+  ```bash
+  site:ripoffreport.com OR site:scamwarners.com "test@example.com"
+  ```
+
