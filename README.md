@@ -2414,4 +2414,159 @@ exiftool image.jpg
 shodan search "ip:xxx.xxx.xxx.xxx"
 ```
 
+## **📌 Extract Geolocation from Metadata**  
+
+🔹 **Check image metadata for GPS coordinates**  
+```bash
+exiftool image.jpg | grep -i "GPS"
+```
+
+🔹 **Extract metadata from videos (if available)**  
+```bash
+ffmpeg -i video.mp4 -f ffmetadata metadata.txt
+```
+
+🔹 **Check metadata of PDFs for location info**  
+```bash
+pdfinfo file.pdf
+```
+
+---
+
+## **📍 IP Geolocation**  
+
+🔹 **Find location from an IP address**  
+```bash
+curl -s "http://ip-api.com/json/8.8.8.8"
+```
+
+🔹 **More detailed IP location data (including ISP & ASN)**  
+```bash
+curl -s "https://ipinfo.io/8.8.8.8/json"
+```
+
+🔹 **Check IP geolocation with MaxMind**  
+```bash
+geoiplookup 8.8.8.8
+```
+
+🔹 **Get approximate IP location from Shodan**  
+```bash
+shodan host 8.8.8.8
+```
+
+---
+
+## **🗺 Reverse Geocoding & Mapping**  
+
+🔹 **Find address from GPS coordinates**  
+```bash
+curl -s "https://nominatim.openstreetmap.org/reverse?format=json&lat=40.748817&lon=-73.985428"
+```
+
+🔹 **Find nearby locations using OpenStreetMap**  
+```bash
+curl -s "https://nominatim.openstreetmap.org/search?q=Eiffel+Tower&format=json"
+```
+
+🔹 **Search places via Google Maps API**  
+```bash
+curl -s "https://maps.googleapis.com/maps/api/geocode/json?address=Eiffel+Tower&key=YOUR_API_KEY"
+```
+
+🔹 **Find historical satellite images**  
+```bash
+https://livingatlas.arcgis.com/wayback/
+```
+
+---
+
+## **📌 Wi-Fi, Bluetooth, & Mobile Data OSINT**  
+
+🔹 **Find location from Wi-Fi BSSID (if known)**  
+```bash
+curl "https://wigle.net/api/v2/network/search?netid=XX:XX:XX:XX:XX:XX"
+```
+
+🔹 **Check if a Wi-Fi SSID has been mapped**  
+```bash
+curl -s "https://api.mylnikov.org/geolocation/wifi?v=1.1&bssid=XX:XX:XX:XX:XX:XX"
+```
+
+🔹 **Check Bluetooth device locations (if tracked)**  
+```bash
+https://www.bluetooth.com/specifications/assigned-numbers/company-identifiers/
+```
+
+🔹 **Check cell tower geolocation (for mobile tracking)**  
+```bash
+curl -s "https://opencellid.org/cell/get?mcc=310&mnc=410&lac=7033&cellid=17811&key=YOUR_API_KEY"
+```
+
+---
+
+## **📍 Social Media Geolocation OSINT**  
+
+🔹 **Find location from Instagram post (if geotagged)**  
+```bash
+https://www.instagram.com/p/POST_ID/
+```
+
+🔹 **Find location from Twitter post (if enabled)**  
+```bash
+https://twitter.com/username/status/POST_ID
+```
+
+🔹 **Extract location from Facebook check-ins**  
+```bash
+https://www.facebook.com/search/places/?q=locationname
+```
+
+🔹 **Reverse search a Snapchat map story**  
+```bash
+https://map.snapchat.com/
+```
+
+---
+
+## **🚗 Vehicle & Transport Tracking**  
+
+🔹 **Track Uber/Lyft rides (if shared link available)**  
+```bash
+https://www.uber.com/track/TRACKING_CODE
+```
+
+🔹 **Look up a car’s geotagged photos (if available)**  
+```bash
+https://www.instagram.com/explore/tags/carnumberplate/
+```
+
+🔹 **Find ship locations (via AIS data)**  
+```bash
+https://www.marinetraffic.com/
+```
+
+🔹 **Find aircraft locations (real-time flight tracking)**  
+```bash
+https://www.flightradar24.com/
+```
+
+---
+
+## **🛰 Satellite & Aerial OSINT**  
+
+🔹 **View live satellite imagery (if available)**  
+```bash
+https://www.planet.com/explorer/
+```
+
+🔹 **Search for satellite images from past years**  
+```bash
+https://eos.com/landviewer/
+```
+
+🔹 **NASA Earth data for environmental tracking**  
+```bash
+https://earthdata.nasa.gov/
+```
 
