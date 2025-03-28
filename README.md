@@ -2656,5 +2656,181 @@ curl -s "https://www.google.com/search?q=site:pastebin.com yourdomain.com"
 curl -s "https://api.dehashed.com/search?query=email@example.com" -u "your_api_key"
 ```
 
+---
+
+### U.S. FOIA Request Guide (How to Request Public Records)
+```bash
+curl -s "https://www.foia.gov/how-to.html"
+```
+### U.S. State-Level FOIA Directories
+```bash
+curl -s "https://www.nfoic.org/coalitions/state-foi-resources/"
+```
+### UK Freedom of Information (FOI) Requests
+```bash
+curl -s "https://www.whatdotheyknow.com/"
+```
+### EU Public Documents & Transparency Database
+```bash
+curl -s "https://www.asktheeu.org/en/request/new"
+```
+
+## 🚓 Law Enforcement & Criminal Records
+
+### U.S. Department of Justice Press Releases (Cases & Convictions)
+```bash
+curl -s "https://www.justice.gov/news?q=John+Doe"
+```
+### Interpol Stolen Works of Art Database
+```bash
+curl -s "https://www.interpol.int/en/Crimes/Cultural-heritage-crime/Stolen-Works-of-Art-Database"
+```
+### U.S. Most Wanted by State
+```bash
+curl -s "https://www.usmarshals.gov/investigations/most_wanted/state.htm?q=Texas"
+```
+### DEA Fugitives List
+```bash
+curl -s "https://www.dea.gov/fugitives?q=John+Doe"
+```
+### Australia Criminal Records Check (National Police Certificates)
+```bash
+curl -s "https://www.afp.gov.au/what-we-do/services/criminal-records"
+```
+
+## 🏛️ Court Cases & Judgments
+
+### U.S. Supreme Court Case Lookup (Oyez)
+```bash
+curl -s "https://www.oyez.org/cases?q=John+Doe"
+```
+### U.S. PACER (Federal Court Case Search) - Requires Login
+```bash
+curl -s "https://pacer.uscourts.gov"
+```
+### UK Supreme Court Case Tracker
+```bash
+curl -s "https://www.supremecourt.uk/cases/search.html?q=John+Doe"
+```
+### India Court Case Search (e-Courts Portal)
+```bash
+curl -s "https://ecourts.gov.in/services/cases?q=John+Doe"
+```
+### European Court of Human Rights Cases
+```bash
+curl -s "https://hudoc.echr.coe.int/eng#{%22fulltext%22:[%22John+Doe%22]}"
+```
+
+## 💰 Financial, Banking & Tax Records
+
+### U.S. Federal Reserve Enforcement Actions
+```bash
+curl -s "https://www.federalreserve.gov/supervisionreg/enforcement-actions.htm?q=John+Doe"
+```
+### U.S. IRS Exempt Organizations Search (Nonprofits, Churches, etc.)
+```bash
+curl -s "https://apps.irs.gov/app/eos/details/?q=NonprofitName"
+```
+### U.S. Office of Foreign Assets Control (OFAC) Sanctions List
+```bash
+curl -s "https://sanctionssearch.ofac.treas.gov/"
+```
+### UK HMRC Tax Evasion & Fraud Reports
+```bash
+curl -s "https://www.gov.uk/government/collections/hmrc-annual-reports"
+```
+### European Central Bank (ECB) Enforcement Actions
+```bash
+curl -s "https://www.bankingsupervision.europa.eu/banking/sanctions/html/index.en.html?q=John+Doe"
+```
+
+## 🏠 Property & Real Estate Records
+
+### U.S. HUD Housing Data & Records
+```bash
+curl -s "https://www.hud.gov/program_offices/housing/rmra/oe/rpts/mfh_f47/mf_f47?q=123+Main+Street"
+```
+### Canada Land Registry (Province-Specific)
+```bash
+curl -s "https://www.lro.gov.on.ca/en/home"
+```
+### UK Land & Property Sales Data
+```bash
+curl -s "https://landregistry.data.gov.uk/app/ppd/"
+```
+### Germany Real Estate Transactions (Open Data)
+```bash
+curl -s "https://www.govdata.de/web/guest/suchen/-/results/q/immobilien"
+```
+
+## 📡 Intelligence, Security & Military Records
+
+### U.S. CIA FOIA Reading Room (Declassified Documents)
+```bash
+curl -s "https://www.cia.gov/readingroom/search/site/John+Doe"
+```
+### FBI Vault (Declassified Government Records)
+```bash
+curl -s "https://vault.fbi.gov/search?q=John+Doe"
+```
+### U.S. Department of Defense Contracts & Spending
+```bash
+curl -s "https://www.defense.gov/News/Contracts/Search?q=CompanyName"
+```
+### UK Ministry of Defence FOI Disclosures
+```bash
+curl -s "https://www.gov.uk/government/publications?departments%5B%5D=ministry-of-defence&q=John+Doe"
+```
+### Russia & China Government Tenders & Defense Deals
+```bash
+curl -s "https://www.russiancontracts.ru/"  
+curl -s "https://www.chinadefense.com.cn/"
+```
+
+## 👤 People, Identity & Vital Records
+
+### U.S. Census Bureau Public Records Search
+```bash
+curl -s "https://data.census.gov/cedsci/?q=John+Doe"
+```
+### Canada Birth, Marriage & Death Certificates (Provincial-Level)
+```bash
+curl -s "https://www.canada.ca/en/revenue-agency/services/tax/individuals/identification-information/change-marital-status.html"
+```
+### UK Births, Marriages & Deaths (GRO Index)
+```bash
+curl -s "https://www.gro.gov.uk/gro/content/certificates/"
+```
+### Australia Births, Deaths & Marriages Registry
+```bash
+curl -s "https://www.bdm.vic.gov.au/research-and-family-history/search-your-family-history"
+```
+### India Aadhaar Card Verification (Limited Public Data)
+```bash
+curl -s "https://uidai.gov.in/ecosystem/authentication-services.html"
+```
+
+## 🎭 Miscellaneous & Hidden OSINT Gems
+
+### U.S. FCC License Database (Find Radio Operators, Companies, etc.)
+```bash
+curl -s "https://wireless2.fcc.gov/UlsApp/UlsSearch/searchAdvanced.jsp?q=John+Doe"
+```
+### U.S. Airline & Pilot License Verification (FAA Database)
+```bash
+curl -s "https://www.faa.gov/licenses-certificates/airmen-inquiry?q=John+Doe"
+```
+### U.S. Medical License Search (Doctors & Practitioners)
+```bash
+curl -s "https://www.npinumberlookup.org/?q=John+Doe"
+```
+### UK DVLA Vehicle & License Plate Lookup (Limited Public Access)
+```bash
+curl -s "https://vehicleenquiry.service.gov.uk/"
+```
+### India RTO Vehicle Registration Check
+```bash
+curl -s "https://vahan.parivahan.gov.in/vahanservice/vahan/ui/statevalidation/homepage.xhtml"
+```
 
 
