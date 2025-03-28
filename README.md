@@ -1835,3 +1835,79 @@ exiftool image.jpg
   curl -s "https://check.spamhaus.org/test@example.com"
   ```
 
+
+- **Find an old username linked to a person via Pastebin dumps:**  
+  ```bash
+  site:pastebin.com "John Doe" OR "johndoe123"
+  ```
+- **Find hidden profiles & associated links using WHOIS history:**  
+  ```bash
+  curl -s "https://whois-history.whoisxmlapi.com/api/v1?apiKey=YOUR_API_KEY&domainName=example.com"
+  ```
+- **Discover someone’s political donations (USA only):**  
+  ```bash
+  site:fec.gov "John Doe" "New York"
+  ```
+- **Check court records, arrest logs & criminal history:**  
+  ```bash
+  site:unicourt.com OR site:pacer.gov OR site:arrestfacts.com "John Doe"
+  ```
+- **Find if a person has been involved in a lawsuit:**  
+  ```bash
+  site:justia.com "John Doe" lawsuit OR defendant OR plaintiff
+  ```
+- **Reverse search job applications & résumés online:**  
+  ```bash
+  site:linkedin.com/in OR site:indeed.com "John Doe" "resume"
+  ```
+- **Find possible relatives or family members linked to a person:**  
+  ```bash
+  site:familytreenow.com "John Doe" "New York"
+  ```
+- **Get personal details leaked in public government databases:**  
+  ```bash
+  site:data.gov "John Doe" OR "123-45-6789"
+  ```
+
+## 📧 Email Investigation - Advanced Tactics  
+- **Find websites & domains registered with an email:**  
+  ```bash
+  curl -s "https://www.whoxy.com/?whois=test@example.com"
+  ```
+- **Find hidden email leaks in public FTP servers:**  
+  ```bash
+  intitle:"index of" "test@example.com" ext:txt | ext:csv | ext:sql
+  ```
+- **Check if an email is linked to an Apple ID:**  
+  ```bash
+  curl -X POST "https://iforgot.apple.com/password/verify/appleid" -d "id=test@example.com"
+  ```
+- **Find metadata in email headers (SPF, DKIM, DMARC validation):**  
+  ```bash
+  exiftool email.eml
+  ```
+- **Check for compromised accounts in combo lists:**  
+  ```bash
+  grep -i "test@example.com" breached-database.txt
+  ```
+- **Extract all emails from a PDF file:**  
+  ```bash
+  pdfgrep -o "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" file.pdf
+  ```
+- **Find email-associated subdomains via DNS:**  
+  ```bash
+  subfinder -d example.com
+  ```
+- **Check if an email is linked to cryptocurrency wallets:**  
+  ```bash
+  site:blockchain.com OR site:etherscan.io "test@example.com"
+  ```
+- **Find disposable or temporary emails linked to a person:**  
+  ```bash
+  site:temp-mail.org OR site:10minutemail.com "test@example.com"
+  ```
+- **Check for SMTP open relay on an email server:**  
+  ```bash
+  swaks --to test@example.com --server mail.example.com --data "Subject: Test"
+  ```
+
