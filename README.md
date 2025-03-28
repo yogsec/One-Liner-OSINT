@@ -469,3 +469,183 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
+
+### **📍 Find Deleted & Cached Information**
+- **Wayback Machine (Internet Archive)** – View old versions of websites  
+  🔗 [https://web.archive.org](https://web.archive.org)  
+  ```bash
+  curl "http://web.archive.org/cdx/search/cdx?url=target.com&output=json"
+  ```
+- **Google Cache** – View cached pages of deleted content  
+  ```bash
+  cache:target.com
+  ```
+- **Bing Cache** – Alternative for Google Cache  
+  ```bash
+  inurl:cache:target.com
+  ```
+
+### **🔍 Extract Content from Websites**
+- **HTTrack** – Clone websites for offline analysis  
+  ```bash
+  httrack https://target.com
+  ```
+- **wget** – Download full websites  
+  ```bash
+  wget -r -np -k https://target.com
+  ```
+- **Scrapy** – Python framework for web scraping  
+  ```bash
+  scrapy startproject target_spider
+  ```
+
+---
+
+## **🕵️‍♂️ OSINT on People (Personal Intelligence)**
+### **🔎 Find Hidden Personal Information**
+- **People Search Engines**  
+  - 🔗 [https://www.spokeo.com](https://www.spokeo.com)  
+  - 🔗 [https://pipl.com](https://pipl.com)  
+  - 🔗 [https://thatsthem.com](https://thatsthem.com)  
+  - 🔗 [https://peekyou.com](https://peekyou.com)  
+
+- **Find Phone Numbers & Emails**  
+  ```bash
+  site:target.com "phone number" OR "contact email"
+  ```
+- **Search for Social Security Numbers (SSNs)**
+  ```bash
+  filetype:xls OR filetype:csv "SSN"
+  ```
+- **Username Lookups (Deep Search)**
+  ```bash
+  inurl:profile "username"
+  ```
+
+### **👤 Find Personal Email Addresses**
+- **Hunter.io** – Find email patterns from company domains  
+  🔗 [https://hunter.io](https://hunter.io)  
+- **Holehe** – Check if an email is linked to online accounts  
+  ```bash
+  holehe email@example.com
+  ```
+- **Email Permutator** – Generate possible email variations  
+  ```bash
+  permute.py first last company.com
+  ```
+
+---
+
+## **📌 Find Geolocation & Address Details**
+### **📍 Extract GPS from Images**
+- **ExifTool** – Extract geolocation from images  
+  ```bash
+  exiftool image.jpg
+  ```
+- **Google Earth Historical Imagery** – View past satellite images  
+  🔗 [https://earth.google.com](https://earth.google.com)  
+
+### **🗺️ Find Someone’s Address**
+- **WhitePages & PeopleFinders**  
+  - 🔗 [https://www.whitepages.com](https://www.whitepages.com)  
+  - 🔗 [https://www.peoplefinders.com](https://www.peoplefinders.com)  
+
+- **Reverse Address Lookup**
+  ```bash
+  site:whitepages.com "target address"
+  ```
+
+---
+
+## **💾 Leaked Database & Credential Hunting**
+### **🔑 Find Leaked Passwords**
+- **Have I Been Pwned?** – Check if email is breached  
+  🔗 [https://haveibeenpwned.com](https://haveibeenpwned.com)  
+- **H8mail** – Search for leaked credentials  
+  ```bash
+  h8mail -t email@example.com
+  ```
+- **BreachForums (Mirror)** – Search data leaks  
+  🔗 [https://breachforums.st](https://breachforums.st)  
+
+### **📂 Search for Exposed Databases**
+- **Find Public MongoDB Databases**
+  ```bash
+  inurl:27017 "MongoDB"
+  ```
+- **Search for Open Elasticsearch DBs**
+  ```bash
+  inurl:9200 "_search"
+  ```
+- **Check for Firebase Data Leaks**
+  ```bash
+  site:firebasestorage.googleapis.com
+  ```
+
+---
+
+## **🔎 Deep Web & Dark Web OSINT**
+### **🛑 Search Hidden Onion Sites**
+- **Ahmia** – Search the dark web  
+  🔗 [https://ahmia.fi](https://ahmia.fi)  
+- **TorBot** – Automate OSINT on onion sites  
+  ```bash
+  git clone https://github.com/DedSecInside/TorBot.git
+  ```
+- **OnionSearch** – Find stolen credentials  
+  ```bash
+  python3 onionsearch.py target
+  ```
+
+### **📡 Scan Deep Web Data Leaks**
+- **DarkSearch.io** – Search dark web leaks  
+  🔗 [https://darksearch.io](https://darksearch.io)  
+- **IntelX** – Search breached data  
+  🔗 [https://intelx.io](https://intelx.io)  
+
+---
+
+## **🛠️ Subdomain & Website OSINT**
+### **🔎 Find Hidden Subdomains**
+- **Subfinder** – Collect subdomains  
+  ```bash
+  subfinder -d target.com
+  ```
+- **Amass** – Map an organization's infrastructure  
+  ```bash
+  amass enum -d target.com
+  ```
+
+### **🔗 Discover Public API Endpoints**
+- **Find API Keys in GitHub**
+  ```bash
+  site:github.com "api_key" "target.com"
+  ```
+- **Search for Publicly Accessible APIs**
+  ```bash
+  site:target.com "api/v1/"
+  ```
+
+---
+
+## **🚀 Automated OSINT Tools**
+### **🔎 OSINT Frameworks**
+- **SpiderFoot** – Full OSINT automation  
+  ```bash
+  spiderfoot -s target.com
+  ```
+- **Metagoofil** – Extract metadata from public files  
+  ```bash
+  metagoofil -d target.com -t pdf -o results/
+  ```
+
+### **⚡ Fast Data Gathering**
+- **theHarvester** – Find emails, subdomains, and metadata  
+  ```bash
+  theHarvester -d target.com -b all
+  ```
+- **Maltego** – Visualize OSINT data connections  
+  🔗 [https://www.maltego.com](https://www.maltego.com)  
+
+---
+
