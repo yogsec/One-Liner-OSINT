@@ -813,3 +813,106 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
+
+### **🔎 People & Organization Searches**
+- **Intelius** – Background checks, addresses, phone numbers  
+  🔗 [https://www.intelius.com](https://www.intelius.com)  
+- **PeekYou** – Finds social media profiles and online presence  
+  🔗 [https://www.peekyou.com](https://www.peekyou.com)  
+- **Pipl** – Deep web search for emails, numbers, social links  
+  🔗 [https://pipl.com](https://pipl.com)  
+- **Spokeo** – Search for personal details, addresses, relatives  
+  🔗 [https://www.spokeo.com](https://www.spokeo.com)  
+
+### **📝 Leaked Data & Breach Searches**
+- **Have I Been Pwned** – Check if an email is in a data breach  
+  🔗 [https://haveibeenpwned.com](https://haveibeenpwned.com)  
+- **DeHashed** – Advanced search for breached credentials  
+  🔗 [https://www.dehashed.com](https://www.dehashed.com)  
+- **LeakCheck** – Finds leaked passwords, usernames, emails  
+  🔗 [https://leakcheck.io](https://leakcheck.io)  
+- **IntelX** – Search dark web leaks, emails, pastes  
+  🔗 [https://intelx.io](https://intelx.io)  
+
+### **🧕️ Dark Web & Underground Searches**
+- **Ahmia** – Search the Tor network  
+  🔗 [https://ahmia.fi](https://ahmia.fi)  
+- **OnionLand Search** – Index of hidden .onion sites  
+  🔗 [https://onionlandsearchengine.com](https://onionlandsearchengine.com)  
+- **DarkSearch** – Crawls dark web marketplaces, forums  
+  🔗 [https://darksearch.io](https://darksearch.io)  
+- **TorBot** – Open-source dark web search tool  
+  ```bash
+  git clone https://github.com/DedSecInside/TorBot.git
+  ```
+
+---
+
+## **📎 Advanced Metadata & Document Analysis**
+### **🔑 Extract Metadata from Images & Documents**
+- **ExifTool** – Extract metadata from photos, PDFs, docs  
+  ```bash
+  exiftool target.jpg
+  ```
+- **strings** – Find hidden text in binary files  
+  ```bash
+  strings target.docx
+  ```
+- **pdf-parser** – Search for hidden data in PDFs  
+  ```bash
+  pdf-parser target.pdf
+  ```
+- **OpenMetadata** – Online metadata extractor  
+  🔗 [https://metapicz.com](https://metapicz.com)  
+
+### **🔍 Reverse Image & Facial Recognition**
+- **Google Lens** – Reverse image search  
+  🔗 [https://lens.google](https://lens.google)  
+- **Yandex Images** – More accurate than Google for faces  
+  🔗 [https://yandex.com/images](https://yandex.com/images)  
+- **PimEyes** – AI-powered face recognition  
+  🔗 [https://pimeyes.com](https://pimeyes.com)  
+- **TinEye** – Reverse image lookup  
+  🔗 [https://tineye.com](https://tineye.com)  
+
+---
+
+## **🚀 Automated OSINT Tools**
+### **🐾 Subdomain & Website Enumeration**
+- **Sublist3r** – Find subdomains of a target  
+  ```bash
+  python sublist3r.py -d target.com
+  ```
+- **Amass** – Powerful OSINT reconnaissance tool  
+  ```bash
+  amass enum -d target.com
+  ```
+- **CRT.sh** – Find SSL certificates revealing hidden subdomains  
+  🔗 [https://crt.sh](https://crt.sh)  
+
+### **📞 Phone Number Intelligence**
+- **NumVerify** – Check phone number validity  
+  🔗 [https://numverify.com](https://numverify.com)  
+- **Truecaller** – Find registered names of phone numbers  
+  🔗 [https://www.truecaller.com](https://www.truecaller.com)  
+- **OSINTFramework** – Collection of phone lookup resources  
+  🔗 [https://osintframework.com](https://osintframework.com)  
+
+---
+
+## **🔍 Google Dorks (More Advanced)**
+- **Find plaintext passwords**  
+  ```bash
+  intext:"password" filetype:log
+  ```
+- **Search for exposed email lists**  
+  ```bash
+  site:pastebin.com "email" | "password"
+  ```
+- **Locate hidden admin panels**  
+  ```bash
+  site:target.com inurl:admin
+  ```
+
+---
+
