@@ -1996,3 +1996,88 @@ exiftool image.jpg
   site:ripoffreport.com OR site:scamwarners.com "test@example.com"
   ```
 
+- **Find a person’s past usernames across multiple platforms:**  
+  ```bash
+  site:namemc.com OR site:usersearch.org OR site:instantusername.com "JohnDoe"
+  ```
+- **Check if a person is registered on genealogy websites:**  
+  ```bash
+  site:ancestry.com OR site:familysearch.org OR site:genealogy.com "John Doe"
+  ```
+- **Look up past marriages & divorces (US only):**  
+  ```bash
+  site:divorcerecords.org OR site:marriagerecords.com "John Doe"
+  ```
+- **Check public campaign donations (US politicians & donors):**  
+  ```bash
+  site:opensecrets.org OR site:fec.gov "John Doe"
+  ```
+- **Find someone’s car registration details (some countries):**  
+  ```bash
+  site:vehiclehistory.com OR site:carfax.com "John Doe"
+  ```
+- **Search for hidden YouTube channels linked to a person:**  
+  ```bash
+  site:youtube.com "John Doe"
+  ```
+- **Find someone’s frequently used locations via check-ins:**  
+  ```bash
+  site:foursquare.com OR site:swarmapp.com "John Doe"
+  ```
+- **Look up private business records or LLC registrations:**  
+  ```bash
+  site:opencorporates.com "John Doe" OR "Doe Enterprises"
+  ```
+- **Check if a person has published academic papers or research:**  
+  ```bash
+  site:researchgate.net OR site:academia.edu "John Doe"
+  ```
+- **Find an author’s books, blog posts, or past writings:**  
+  ```bash
+  site:goodreads.com OR site:medium.com OR site:substack.com "John Doe"
+  ```
+
+## 📧 Email Investigation - Next Level Tactics
+
+- **Check if an email is linked to a Facebook account:**  
+  ```bash
+  curl -X POST -d "email=test@example.com" https://www.facebook.com/login/identify
+  ```
+- **Find if an email is mentioned in Telegram groups:**  
+  ```bash
+  site:t.me OR site:telegram.me "test@example.com"
+  ```
+- **Look up emails linked to an IP address using AbuseIPDB:**  
+  ```bash
+  curl -s "https://api.abuseipdb.com/api/v2/check?ipAddress=1.2.3.4&apiKey=YOUR_API_KEY"
+  ```
+- **Extract email addresses from HTML source code of a website:**  
+  ```bash
+  curl -s "http://example.com" | grep -oP '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+  ```
+- **Find all emails ever used on a specific website:**  
+  ```bash
+  site:example.com "email"
+  ```
+- **Search for past email leaks using HIBP API:**  
+  ```bash
+  curl -s "https://haveibeenpwned.com/api/v2/breachedaccount/test@example.com"
+  ```
+- **Generate common email permutations for OSINT scanning:**  
+  ```bash
+  python3 EmailPermutator.py -n "John Doe" -d example.com
+  ```
+- **Check if an email is linked to a Zoom account:**  
+  ```bash
+  curl -X POST "https://zoom.us/signup" -d "email=test@example.com"
+  ```
+- **Find if an email is associated with a LinkedIn account:**  
+  ```bash
+  curl -X POST "https://www.linkedin.com/checkpoint/lg/login-submit" -d "session_key=test@example.com"
+  ```
+- **Discover if an email is linked to an Instagram account:**  
+  ```bash
+  curl -X POST "https://www.instagram.com/accounts/account_recovery_send_ajax/" -d "email_or_username=test@example.com"
+  ```
+
+
