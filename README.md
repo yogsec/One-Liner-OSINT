@@ -26,9 +26,6 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   ```bash
   site:github.com "John Doe" "@gmail.com"
   ```
-
-### **🔗 Social Media & Online Presence**
-
 - **Find all social media accounts of a person**:  
   ```bash
   "John Doe" site:linkedin.com | site:facebook.com | site:twitter.com | site:instagram.com
@@ -103,20 +100,6 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 - **Check for network devices and login portals**:  
   ```bash
   site:targetcompany.com inurl:admin | inurl:dashboard | inurl:login
-  ```
-
-### **🔑 API Keys & Credentials**
-- **Find leaked API keys on GitHub**:  
-  ```bash
-  site:github.com "api_key" | "AWS_SECRET" | "password" targetcompany.com
-  ```
-- **Search for environment files (.env) containing credentials**:  
-  ```bash
-  site:targetcompany.com ext:env "DB_PASSWORD" | "SECRET_KEY"
-  ```
-- **Look for exposed configuration files**:  
-  ```bash
-  site:targetcompany.com ext:conf | ext:ini | ext:log
   ```
 
 ### **🔎 Leaks & Security Issues**
