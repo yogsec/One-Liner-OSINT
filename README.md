@@ -1762,4 +1762,76 @@ exiftool image.jpg
   echo "John Doe" | awk '{print tolower($1$2"@example.com"), tolower($1"."$2"@example.com"), tolower(substr($1,1,1)$2"@example.com")}'
   ```
 
+---
+
+
+## 👤 Advanced People Search  
+- **Find hidden social media profiles using Google dorks:**  
+  ```bash
+  site:instagram.com | site:tiktok.com | site:twitter.com "John Doe" "New York"
+  ```
+- **Find someone's aliases, old usernames, and accounts:**  
+  ```bash
+  site:usernamecheck.com OR site:checkusernames.com "JohnDoe"
+  ```
+- **Check if a phone number is linked to an online account (PhoneInfoga):**  
+  ```bash
+  phoneinfoga scan -n "+11234567890"
+  ```
+- **Check for leaked personal details on public databases:**  
+  ```bash
+  site:publicrecords.directory "John Doe" "Los Angeles"
+  ```
+- **Find associated domains with a name or business:**  
+  ```bash
+  curl -s "https://crt.sh/?q=%25example.com&output=json" | jq .
+  ```
+- **Reverse lookup a street address to find past owners:**  
+  ```bash
+  site:rehold.com OR site:spokeo.com OR site:truthfinder.com "123 Main St, NY"
+  ```
+- **Find images linked to a name (Google Reverse Image):**  
+  ```bash
+  site:images.google.com "John Doe"
+  ```
+
+---
+
+## 📧 Advanced Email Investigation  
+- **Extract emails from a website recursively:**  
+  ```bash
+  theharvester -d example.com -l 100 -b google
+  ```
+- **Find all mentions of an email in forum posts:**  
+  ```bash
+  site:reddit.com OR site:quora.com "test@example.com"
+  ```
+- **Search for email leaks in plaintext files:**  
+  ```bash
+  "test@example.com" ext:txt OR ext:csv OR ext:log OR ext:sql
+  ```
+- **Find old email addresses linked to a domain:**  
+  ```bash
+  curl -s "http://web.archive.org/cdx/search/cdx?url=example.com&fl=original"
+  ```
+- **Find the social media accounts linked to an email:**  
+  ```bash
+  holehe test@example.com
+  ```
+- **Check if an email is linked to a PayPal account:**  
+  ```bash
+  curl -s -X POST -d "cmd=_notify-validate&receiver_email=test@example.com" https://www.paypal.com/cgi-bin/webscr
+  ```
+- **Generate potential email variations for a target:**  
+  ```bash
+  echo "John Doe" | awk '{print tolower($1$2"@example.com"), tolower($1"."$2"@example.com"), tolower(substr($1,1,1)$2"@example.com")}'
+  ```
+- **Check SPF, DKIM, and DMARC for an email domain:**  
+  ```bash
+  nslookup -q=TXT example.com
+  ```
+- **Check if an email is being used in spam campaigns (Spamhaus API):**  
+  ```bash
+  curl -s "https://check.spamhaus.org/test@example.com"
+  ```
 
