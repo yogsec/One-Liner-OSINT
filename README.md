@@ -2621,4 +2621,40 @@ https://maps.google.com/?q=LAT,LON
 ```
 
 
+```bash
+# Search for keywords on Ahmia (Tor Search Engine)
+torify curl -s "https://ahmia.fi/search/?q=your_keyword"
+
+# Search on OnionLand (Dark Web Search Engine)
+torify curl -s "https://onionlandsearchengine.com/search?q=your_keyword"
+
+# Extract all .onion links from a webpage
+torify curl -s "http://example.onion" | grep -oP '(?<=href=")http://[^"]+\.onion'
+
+# Find indexed .onion sites on DuckDuckGo
+torify curl -s "https://www.duckduckgo.com/html?q=site:onion your_keyword"
+
+# Check if a dark web site is online
+torify curl -Is http://example.onion | head -n 1
+```
+
+## **Paste Sites OSINT One-Liners**
+```bash
+# Search for leaked credentials on Pastebin
+curl -s "https://www.google.com/search?q=site:pastebin.com your_keyword"
+
+# Scrape Pastebin for recent pastes (requires API key)
+curl -s "https://scrape.pastebin.com/api_scraping.php?limit=10"
+
+# Check for mentions of an email in recent pastes
+curl -s "https://www.google.com/search?q=site:pastebin.com your_email@example.com"
+
+# Find pastes mentioning a specific domain
+curl -s "https://www.google.com/search?q=site:pastebin.com yourdomain.com"
+
+# Check for leaked credentials using DeHashed (API required)
+curl -s "https://api.dehashed.com/search?query=email@example.com" -u "your_api_key"
+```
+
+
 
