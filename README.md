@@ -1,6 +1,6 @@
 # One Liner OSINT
 
-A collection of powerful one-liner commands for Open-Source Intelligence (OSINT) gathering. This repository provides quick and efficient command-line solutions to extract valuable information from public sources, including domain reconnaissance, social media analysis, metadata extraction, and more. Perfect for security researchers, bug bounty hunters, and ethical hackers looking to automate OSINT tasks with minimal effort. 🚀
+A collection of powerful one-liner commands for Open-Source Intelligence (OSINT) gathering. This repository provides quick and efficient command-line solutions to extract valuable information from public sources, including domain reconnaissance, social media analysis, metadata extraction, and more. Perfect for security researchers, bug bounty hunters, and ethical hackers looking to automate OSINT tasks with minimal effort.
 
 ---
 
@@ -646,6 +646,170 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   ```
 - **Maltego** – Visualize OSINT data connections  
   🔗 [https://www.maltego.com](https://www.maltego.com)  
+
+---
+
+
+### **📍 Find Hidden Data & Leaks**
+- **Shodan** – Search for exposed servers, IoT devices  
+  🔗 [https://www.shodan.io](https://www.shodan.io)  
+  ```bash
+  shodan search "Default password"
+  ```
+- **Censys** – Find exposed devices, certificates, open ports  
+  🔗 [https://censys.io](https://censys.io)  
+  ```bash
+  censys search target.com
+  ```
+- **ZoomEye** – Chinese version of Shodan with more results  
+  🔗 [https://www.zoomeye.org](https://www.zoomeye.org)  
+- **BinaryEdge** – Advanced IP and port scanning  
+  🔗 [https://www.binaryedge.io](https://www.binaryedge.io)  
+
+### **📂 Data Breach & Credential Lookups**
+- **WeLeakInfo (Mirror)** – Search for exposed credentials  
+  🔗 [https://weleakinfo.to](https://weleakinfo.to)  
+- **LeaksDB** – Find leaked usernames and passwords  
+  🔗 [https://leaksdb.com](https://leaksdb.com)  
+- **Snusbase** – Advanced breach database  
+  🔗 [https://snusbase.com](https://snusbase.com)  
+- **Scylla.sh** – Search credentials from past dumps  
+  🔗 [https://scylla.sh](https://scylla.sh)  
+
+---
+
+## **🕵️ Social Media Intelligence (SOCMINT)**
+### **🔍 Find Hidden Social Media Accounts**
+- **WhatsMyName** – Search username across multiple platforms  
+  🔗 [https://whatsmyname.app](https://whatsmyname.app)  
+- **Sherlock** – Find accounts linked to a username  
+  ```bash
+  python3 sherlock.py username
+  ```
+- **Maigret** – More powerful than Sherlock for finding social accounts  
+  ```bash
+  python3 maigret.py username
+  ```
+
+### **📸 Reverse Image Search on Social Media**
+- **Yandex** – Best for finding hidden social media profiles  
+  🔗 [https://yandex.com/images](https://yandex.com/images)  
+- **Google Lens** – Identifies faces, places, and objects  
+  🔗 [https://lens.google](https://lens.google)  
+- **PimEyes** – AI-powered face recognition  
+  🔗 [https://pimeyes.com](https://pimeyes.com)  
+
+### **📍 Track Geolocation Data**
+- **GeoCreepy** – Extracts geolocation from social media posts  
+  ```bash
+  git clone https://github.com/ilektrojohn/creepy.git
+  ```
+- **ExifTool** – Extracts GPS coordinates from photos  
+  ```bash
+  exiftool image.jpg
+  ```
+- **Google Earth Historical Imagery** – View past satellite images  
+  🔗 [https://earth.google.com](https://earth.google.com)  
+
+---
+
+## **🔑 Extract Metadata & Documents**
+### **📂 Hidden Metadata in Files**
+- **FOCA** – Extracts metadata from documents, PDFs  
+  🔗 [https://elevenpaths.com/foca](https://elevenpaths.com/foca)  
+- **ExifTool** – Extract hidden details from images and documents  
+  ```bash
+  exiftool document.docx
+  ```
+- **Strings** – Find hidden text in binary files  
+  ```bash
+  strings target.pdf
+  ```
+- **Metadata2Go** – Online metadata extraction  
+  🔗 [https://www.metadata2go.com](https://www.metadata2go.com)  
+
+---
+
+## **📡 Subdomain & Website Enumeration**
+### **🔍 Find Hidden Subdomains**
+- **Subfinder** – Finds subdomains via multiple sources  
+  ```bash
+  subfinder -d target.com
+  ```
+- **Findomain** – Fast subdomain enumeration  
+  ```bash
+  findomain -t target.com
+  ```
+- **CRT.sh** – Find SSL certificates linked to subdomains  
+  🔗 [https://crt.sh](https://crt.sh)  
+
+### **🛠️ Find Exposed Directories**
+- **GoBuster** – Find hidden directories and files  
+  ```bash
+  gobuster dir -u target.com -w wordlist.txt
+  ```
+- **Dirsearch** – More advanced directory brute-forcing  
+  ```bash
+  python3 dirsearch.py -u target.com -e php,html,js
+  ```
+
+---
+
+## **🔎 Google Dorks (More Advanced)**
+### **🗂️ Find Exposed Databases**
+- **Search for SQL dumps**  
+  ```bash
+  inurl:.sql filetype:sql
+  ```
+- **Find public Firebase databases**  
+  ```bash
+  site:firebasestorage.googleapis.com
+  ```
+- **Locate public MongoDB instances**  
+  ```bash
+  inurl:27017 filetype:log
+  ```
+
+### **📄 Find Sensitive Documents**
+- **Find internal reports**  
+  ```bash
+  site:target.com filetype:pdf "confidential"
+  ```
+- **Search for exposed .env files (credentials)**  
+  ```bash
+  inurl:.env "DB_PASSWORD"
+  ```
+- **Look for exposed config files**  
+  ```bash
+  intitle:"index of" "wp-config.php"
+  ```
+
+---
+
+## **💾 Data Breach & Credential Automation**
+### **📂 Check If an Email Is in a Breach**
+- **Holehe** – Check if an email is linked to social accounts  
+  ```bash
+  holehe email@example.com
+  ```
+- **H8mail** – Find leaked passwords  
+  ```bash
+  h8mail -t email@example.com
+  ```
+- **GHunt** – Extract data from Google accounts  
+  ```bash
+  python3 ghunt.py email@example.com
+  ```
+
+### **🚀 Dark Web Data Mining**
+- **TorBot** – Automates OSINT on dark web sites  
+  ```bash
+  git clone https://github.com/DedSecInside/TorBot.git
+  ```
+- **OnionSearch** – Searches dark web for stolen data  
+  ```bash
+  python3 onionsearch.py target
+  ```
 
 ---
 
