@@ -1699,6 +1699,67 @@ exiftool image.jpg
   curl -s "https://mxtoolbox.com/SuperTool.aspx?action=blacklist:test@example.com"
   ```
 
+
+
+- **Find someone's old accounts via Wayback Machine:**  
+  ```bash
+  curl -s "http://web.archive.org/cdx/search/cdx?url=facebook.com/johndoe*&output=text&fl=original"
+  ```  
+- **Get full details of a phone number (Numverify API):**  
+  ```bash
+  curl -s "http://apilayer.net/api/validate?access_key=YOUR_API_KEY&number=+11234567890"
+  ```  
+- **Find all images of a person using face recognition (PimEyes):**  
+  ```bash
+  site:pimeyes.com "John Doe"
+  ```  
+- **Locate someone's forum activity using email hash (Gravatar):**  
+  ```bash
+  curl -s "https://en.gravatar.com/avatar/$(echo -n 'test@example.com' | md5sum | awk '{print $1}')"
+  ```  
+- **Find a person's connections & mentions on the web:**  
+  ```bash
+  site:about.me OR site:angel.co OR site:medium.com "John Doe"
+  ```  
+- **Reverse image search a profile picture (Google Images):**  
+  ```bash
+  curl -F "encoded_image=@profile.jpg" https://www.google.com/searchbyimage/upload
+  ```
+
 ---
+
+## 💎 Email Investigation
+
+- **Find email aliases used by a person:**  
+  ```bash
+  site:pastebin.com OR site:throwawaymail.com "JohnDoe@example.com"
+  ```  
+- **Find an email in GitHub repositories:**  
+  ```bash
+  site:github.com "JohnDoe@example.com"
+  ```  
+- **Search for breached email data (Dehashed API):**  
+  ```bash
+  curl -u "user:password" -X GET "https://api.dehashed.com/search?query=test@example.com"
+  ```  
+- **Check SPF, DKIM, and DMARC records for an email domain:**  
+  ```bash
+  dig TXT example.com | grep "spf"
+  ```
+  ```bash
+  dig TXT _dmarc.example.com | grep "v=DMARC1"
+  ```
+- **Find subdomains linked to an email provider (for company investigation):**  
+  ```bash
+  amass enum -d example.com
+  ```
+- **Extract emails from a webpage using regex (wget & grep):**  
+  ```bash
+  wget -qO- "https://example.com" | grep -E -o "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+  ```  
+- **Generate possible email variations for a person:**  
+  ```bash
+  echo "John Doe" | awk '{print tolower($1$2"@example.com"), tolower($1"."$2"@example.com"), tolower(substr($1,1,1)$2"@example.com")}'
+  ```
 
 
