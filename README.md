@@ -28,6 +28,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   ```
 
 ### **🔗 Social Media & Online Presence**
+
 - **Find all social media accounts of a person**:  
   ```bash
   "John Doe" site:linkedin.com | site:facebook.com | site:twitter.com | site:instagram.com
