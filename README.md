@@ -984,3 +984,97 @@ Look for mentions of a company in hacking forums:
 ```
 
 ---
+
+
+## **🔍 Google Dorks for Personal OSINT**
+- **Find social media profiles**:  
+  ```bash
+  "John Doe" site:facebook.com | site:twitter.com | site:linkedin.com | site:instagram.com
+  ```
+- **Find email addresses linked to a person**:  
+  ```bash
+  "John Doe" "@gmail.com" | "@yahoo.com" | "@outlook.com"
+  ```
+- **Search for phone numbers**:  
+  ```bash
+  "John Doe" "contact" | "phone" | "mobile" | "WhatsApp" site:pastebin.com | site:github.com
+  ```
+- **Find resume or CV**:  
+  ```bash
+  "John Doe" filetype:pdf | filetype:doc "resume" | "curriculum vitae"
+  ```
+- **Look for mentions in data leaks**:  
+  ```bash
+  "John Doe" site:pastebin.com | site:github.com | site:throwbin.io
+  ```
+- **Check for forum posts**:  
+  ```bash
+  "John Doe" site:reddit.com | site:quora.com | site:stackoverflow.com
+  ```
+- **Search for person’s photos**:  
+  ```bash
+  "John Doe" site:instagram.com | site:pinterest.com | site:flickr.com
+  ```
+- **Find Amazon wishlists**:  
+  ```bash
+  "John Doe" site:amazon.com "wishlist"
+  ```
+
+---
+
+## **🔍 Google Dorks for Organizations**
+- **Find subdomains of a company**:  
+  ```bash
+  site:*.targetcompany.com -www
+  ```
+- **Look for internal documents**:  
+  ```bash
+  site:targetcompany.com ext:pdf | ext:doc | ext:ppt "confidential"
+  ```
+- **Search for employee emails**:  
+  ```bash
+  "@targetcompany.com" -www
+  ```
+- **Find job postings to understand technology stack**:  
+  ```bash
+  "hiring" | "we are looking for" site:targetcompany.com
+  ```
+- **Check for API keys and credentials on GitHub**:  
+  ```bash
+  site:github.com "targetcompany.com" "api_key" | "password"
+  ```
+- **Find exposed databases**:  
+  ```bash
+  site:targetcompany.com ext:sql | ext:db | ext:json
+  ```
+- **Search for network devices and login portals**:  
+  ```bash
+  site:targetcompany.com inurl:login | inurl:admin
+  ```
+- **Look for configuration files**:  
+  ```bash
+  site:targetcompany.com ext:conf | ext:ini | ext:log
+  ```
+- **Check for past security incidents**:  
+  ```bash
+  "targetcompany.com" "data breach" | "leaked database"
+  ```
+
+---
+
+## **🔍 Bing & Yandex Dorks for Personal & Organization OSINT**
+- **Find person’s profiles on lesser-known sites**:  
+  ```bash
+  "John Doe" site:myspace.com | site:medium.com | site:tumblr.com
+  ```
+- **Check for old cached pages**:  
+  ```bash
+  site:targetcompany.com cache:
+  ```
+- **Find hidden directories**:  
+  ```bash
+  intitle:"index of" site:targetcompany.com
+  ```
+
+---
+
