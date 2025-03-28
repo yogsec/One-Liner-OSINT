@@ -1077,4 +1077,176 @@ Look for mentions of a company in hacking forums:
   ```
 
 ---
+---
+
+# **OSINT for Social Media**
+
+## **🛠 Automating OSINT with APIs & Scrapers**  
+### **🚀 Twitter (X) Advanced OSINT**
+```bash
+# Extract tweets, likes, and followers via API
+twint -u username --followers --following --tweets
+```
+```bash
+# Search for leaked credentials in tweets  
+twint -s "password OR API_KEY OR AWS_SECRET_ACCESS_KEY"
+```
+```bash
+# Extract Twitter followers without rate limits
+twint -u username --followers --csv -o followers.csv
+```
+```bash
+# Find accounts linked to a phone number  
+twint -s "+1234567890"
+```
+```bash
+# Monitor target’s tweets in real-time
+twint -u username --rt
+```
+```bash
+# Find tweets with geotagged locations  
+twint -s "keyword" --near "New York"
+```
+
+---
+
+### **📘 Facebook Advanced OSINT**
+```bash
+# Find all Facebook groups a user is in  
+google "site:facebook.com/groups username"
+```
+```bash
+# Extract hidden friends list from a Facebook profile  
+curl -s "https://graph.facebook.com/v14.0/username/friends?access_token=YOUR_ACCESS_TOKEN"
+```
+```bash
+# Scrape Facebook public posts by a user  
+facebook-scraper username --posts
+```
+```bash
+# Search for leaked Facebook IDs in breaches  
+google "site:pastebin.com facebook.com/profile.php?id="
+```
+```bash
+# Find Facebook posts from a specific location  
+google "site:facebook.com intext:'📍 New York'"
+```
+
+---
+
+### **📸 Instagram Advanced OSINT**
+```bash
+# Download all Instagram stories from a target  
+instaloader --stories username
+```
+```bash
+# Extract Instagram metadata (location, device info, etc.)  
+instaloader --metadata-json username
+```
+```bash
+# Find all Instagram profiles linked to an email  
+google "site:instagram.com intext:email@example.com"
+```
+```bash
+# Extract geotagged Instagram posts  
+google "site:instagram.com intext:'📍 London'"
+```
+```bash
+# Find Instagram users with similar interests  
+google "site:instagram.com intext:'#hacking #cybersecurity'"
+```
+
+---
+
+### **💼 LinkedIn Advanced OSINT**
+```bash
+# Scrape all employees from a company  
+linkedin-scraper -c "Google"
+```
+```bash
+# Extract job postings and hidden email contacts  
+google "site:linkedin.com/jobs 'Cybersecurity Analyst' 'Remote'"
+```
+```bash
+# Find LinkedIn profiles with leaked credentials  
+google "site:linkedin.com/in 'password' OR 'email@example.com'"
+```
+```bash
+# Identify LinkedIn users who worked for a company in the past  
+google "site:linkedin.com/in 'Worked at Google'"
+```
+```bash
+# Find LinkedIn profiles linked to an IP address  
+shodan search "org:'LinkedIn Corp'"
+```
+
+---
+
+### **📺 YouTube Advanced OSINT**
+```bash
+# Download metadata from a YouTube channel  
+yt-dlp -J "https://www.youtube.com/c/username"
+```
+```bash
+# Extract subtitles and hidden keywords from videos  
+yt-dlp --write-auto-sub --skip-download "https://www.youtube.com/watch?v=VIDEO_ID"
+```
+```bash
+# Find YouTube videos from a specific geolocation  
+google "site:youtube.com intext:'📍 New York'"
+```
+```bash
+# Extract YouTube video analytics & insights  
+google "site:socialblade.com youtube username"
+```
+```bash
+# Find deleted YouTube videos  
+google "site:archive.org youtube.com/watch?v="
+```
+
+---
+
+### **🎵 TikTok Advanced OSINT**
+```bash
+# Scrape TikTok videos from a user  
+tiktok-scraper user username -n 50 -d
+```
+```bash
+# Extract TikTok comments and engagement analytics  
+tiktok-scraper user username -t comments
+```
+```bash
+# Find TikTok accounts linked to an email  
+google "site:tiktok.com intext:email@example.com"
+```
+```bash
+# Download TikTok videos and metadata  
+tiktok-scraper video VIDEO_ID
+```
+```bash
+# Extract hashtags and trends from TikTok  
+google "site:tiktok.com intext:'#OSINT #Cybersecurity'"
+```
+
+---
+
+### **🎯 Extra OSINT Techniques**
+```bash
+# Reverse search social media profile pictures  
+google "site:tineye.com inurl:result image.jpg"
+```
+```bash
+# Find deep-web social media leaks  
+google "site:pastebin.com OR site:ghostbin.com 'email@example.com'"
+```
+```bash
+# Extract hidden metadata from social media images  
+exiftool image.jpg
+```
+```bash
+# Search for hidden social media accounts using an IP  
+shodan search "ip:xxx.xxx.xxx.xxx"
+```
+
+---
 
