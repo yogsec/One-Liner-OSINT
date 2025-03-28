@@ -286,3 +286,186 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
+
+### **🔎 Advanced Google Dorks for People & Organizations**
+- **Find Personal Information on a Website**
+  ```bash
+  site:target.com intext:"phone number" OR "email" OR "address"
+  ```
+- **Find Login Pages**
+  ```bash
+  site:target.com inurl:login
+  ```
+- **Find PDFs & Documents Containing Emails**
+  ```bash
+  filetype:pdf OR filetype:docx OR filetype:xls intext:"@gmail.com"
+  ```
+- **Find Public FTP Servers**
+  ```bash
+  intitle:"index of" "ftp" site:target.com
+  ```
+
+### **📍 Find Hidden Data & Cached Info**
+- **Search in Google Cache**
+  ```bash
+  cache:target.com
+  ```
+- **Find Deleted Pages via Wayback Machine**
+  ```bash
+  site:web.archive.org target.com
+  ```
+- **Search for Sensitive PDF Reports**
+  ```bash
+  site:gov OR site:mil OR site:edu filetype:pdf "confidential"
+  ```
+
+---
+
+## **🕵️‍♂️ OSINT on People (Personal Reconnaissance)**
+### **🔎 Find Someone's Digital Footprint**
+- **People Search Engines**  
+  - 🔗 [https://pipl.com](https://pipl.com)  
+  - 🔗 [https://thatsthem.com](https://thatsthem.com)  
+  - 🔗 [https://www.spokeo.com](https://www.spokeo.com)  
+
+- **Find Phone Numbers & Emails**
+  ```bash
+  site:target.com "phone number" OR "email"
+  ```
+- **Reverse Email Lookup**
+  ```bash
+  site:linkedin.com OR site:facebook.com "email@example.com"
+  ```
+
+### **👀 Social Media Intelligence (SOCMINT)**
+- **Find All Social Media Accounts for a Username**
+  ```bash
+  site:twitter.com OR site:instagram.com OR site:facebook.com "username"
+  ```
+- **Find Facebook Posts About Someone**
+  ```bash
+  site:facebook.com "John Doe" "lives in New York"
+  ```
+- **Find Instagram & TikTok Accounts via Google**
+  ```bash
+  site:instagram.com "john_doe" OR site:tiktok.com "john_doe"
+  ```
+- **Use Sherlock for Automated Social Media OSINT**
+  ```bash
+  sherlock username
+  ```
+
+---
+
+## **📍 Geolocation OSINT**
+### **🔎 Track Location from Photos**
+- **Extract GPS from Image Metadata**
+  ```bash
+  exiftool image.jpg
+  ```
+- **Search Google for Images from a Location**
+  ```bash
+  site:instagram.com "New York City" "Times Square"
+  ```
+- **Find Someone's Location via Twitter**
+  ```bash
+  site:twitter.com "New York" geocode:40.7128,-74.0060,5km
+  ```
+
+### **🔎 Reverse Image Search**
+- **Find Someone’s Profile Picture on Other Sites**
+  🔗 [https://www.tineye.com](https://www.tineye.com)  
+  🔗 [https://images.google.com](https://images.google.com)  
+
+- **Find Images in Cached Archives**
+  ```bash
+  site:web.archive.org "target image name"
+  ```
+
+---
+
+## **💾 Leaked Database & Dark Web OSINT**
+### **🔑 Find Leaked Emails & Passwords**
+- **Check if an Email is Breached**
+  🔗 [https://haveibeenpwned.com](https://haveibeenpwned.com)  
+- **Find Leaked Databases on Pastebin**
+  ```bash
+  site:pastebin.com "password" "target.com"
+  ```
+- **Search for Leaked Credentials on the Dark Web**
+  ```bash
+  site:darksearch.io "email@example.com"
+  ```
+
+### **📂 Find Exposed Databases**
+- **Search for Open MongoDB**
+  ```bash
+  inurl:27017 "_id"
+  ```
+- **Search for Open Elasticsearch Instances**
+  ```bash
+  inurl:9200 "_search"
+  ```
+- **Find Firebase Databases**
+  ```bash
+  site:firebasestorage.googleapis.com
+  ```
+
+---
+
+## **📡 OSINT on Organizations**
+### **🔎 Subdomain & Infrastructure Recon**
+- **Find Hidden Subdomains**
+  ```bash
+  subfinder -d target.com
+  ```
+- **Find Exposed API Endpoints**
+  ```bash
+  site:target.com "api/v1/"
+  ```
+
+### **🔗 Find Employee Emails**
+- **Find Company Email Patterns with Hunter.io**  
+  🔗 [https://hunter.io](https://hunter.io)  
+- **Search for Leaked Employee Emails**
+  ```bash
+  site:linkedin.com "@target.com"
+  ```
+
+### **🔎 Detect Exposed Cloud Storage**
+- **Find Public Google Drive Links**
+  ```bash
+  site:drive.google.com "confidential"
+  ```
+- **Find Public AWS S3 Buckets**
+  ```bash
+  site:s3.amazonaws.com "target"
+  ```
+
+---
+
+## **🚀 OSINT Automation Tools**
+### **🔎 Comprehensive OSINT Frameworks**
+- **SpiderFoot** – Automated OSINT tool  
+  ```bash
+  spiderfoot -s target.com
+  ```
+- **theHarvester** – Gather emails & subdomains  
+  ```bash
+  theHarvester -d target.com -b all
+  ```
+
+### **⚡ Fast Recon Tools**
+- **Amass** – Network mapping & reconnaissance  
+  ```bash
+  amass enum -d target.com
+  ```
+- **Metagoofil** – Extract metadata from public files  
+  ```bash
+  metagoofil -d target.com -t pdf -o results/
+  ```
+- **Maltego** – Visualize OSINT data connections  
+  🔗 [https://www.maltego.com](https://www.maltego.com)  
+
+---
+
