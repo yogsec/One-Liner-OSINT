@@ -2570,3 +2570,55 @@ https://eos.com/landviewer/
 https://earthdata.nasa.gov/
 ```
 
+📌 **Extract GPS from images (Exif metadata)**  
+```bash
+exiftool image.jpg | grep -E "GPS Latitude|GPS Longitude"
+```
+
+📍 **Reverse image search location (Google)**  
+```bash
+curl -F 'encoded_image=@image.jpg' https://www.google.com/searchbyimage
+```
+
+🗺 **Find location from Wi-Fi BSSID**  
+```bash
+curl "https://wigle.net/api/v2/network/search?netid=XX:XX:XX:XX:XX:XX"
+```
+
+📍 **Find location from an IP address**  
+```bash
+curl -s "http://ip-api.com/json/IP_ADDRESS"
+```
+
+🌍 **Get geolocation from phone number**  
+```bash
+python3 phoneinfoga.py -n +1234567890
+```
+
+📌 **Check Google Maps Timeline (if accessible)**  
+```bash
+https://www.google.com/maps/timeline
+```
+
+🛰 **Get satellite images of a location**  
+```bash
+https://www.google.com/maps/place/lat,long
+```
+
+📍 **Reverse Geocode Coordinates**  
+```bash
+curl -s "https://nominatim.openstreetmap.org/reverse?format=json&lat=LAT&lon=LON"
+```
+
+🚗 **Track Uber/Lyft ride details (if link available)**  
+```bash
+https://www.uber.com/track/XXXXXXXX
+```
+
+🌐 **Find location from social media posts**  
+```bash
+https://maps.google.com/?q=LAT,LON
+```
+
+
+
