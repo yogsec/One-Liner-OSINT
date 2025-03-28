@@ -1554,3 +1554,98 @@ google "site:reddit.com/user/username"
 # Find comments from a user
 curl -s "https://www.reddit.com/user/username/comments.json"
 ```
+
+## **YouTube OSINT:**  
+```bash
+# Find all videos uploaded by a user
+google "site:youtube.com/user OR site:youtube.com/channel username"
+```
+```bash
+# Extract YouTube video metadata
+yt-dlp --get-title --get-id --get-description --get-duration --get-upload-date "https://www.youtube.com/watch?v=VIDEO_ID"
+```
+
+## **TikTok OSINT:**  
+```bash
+# Search for a TikTok user's profile
+google "site:tiktok.com/@username"
+```
+```bash
+# Extract TikTok videos and metadata
+tiktok-scraper user username -n 50 -d
+```
+
+## **Snapchat OSINT:**  
+```bash
+# Find public Snapchat stories
+google "site:map.snapchat.com username"
+```
+```bash
+# Search for Snapchat users by name
+google "site:snapchat.com add username"
+```
+
+## **Pinterest OSINT:**  
+```bash
+# Find all Pinterest boards of a user
+google "site:pinterest.com/username"
+```
+```bash
+# Search for pins related to a keyword
+google "site:pinterest.com/pin/ keyword"
+```
+
+## **GitHub OSINT:**  
+```bash
+# Search for sensitive data in a user's GitHub repo
+google "site:github.com username password OR api_key OR token"
+```
+```bash
+# Find email addresses in GitHub commits
+git log --pretty=format:"%ae" | sort -u
+```
+
+## **Telegram OSINT:**  
+```bash
+# Find Telegram groups related to a keyword
+google "site:t.me keyword"
+```
+```bash
+# Check if a Telegram username exists
+curl -s "https://t.me/username"
+```
+
+## **Discord OSINT:**  
+```bash
+# Find Discord servers related to a keyword
+google "site:discord.gg keyword"
+```
+```bash
+# Search for Discord user profiles
+google "site:discord.com users username"
+```
+
+## **WhatsApp OSINT:**  
+```bash
+# Search for public WhatsApp groups
+google "site:chat.whatsapp.com keyword"
+```
+```bash
+# Check if a phone number has a WhatsApp account
+curl -s "https://api.whatsapp.com/send?phone=+1234567890"
+```
+
+## **General OSINT Tools for Social Media:**  
+```bash
+# Find all social media profiles of a user
+holehe username@example.com
+```
+```bash
+# Check username availability on multiple sites
+python3 maigret username
+```
+```bash
+# Extract metadata from an image (EXIF data)
+exiftool image.jpg
+```
+
