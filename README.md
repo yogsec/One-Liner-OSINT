@@ -1,6 +1,6 @@
 # One Liner OSINT
 
-![Osint One LIners Cheat Sheet](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG96MHV4b3NwaHlsdzlkc2U5OTQxdGt1aDRtbWEwNGg2Mzg3YXdrZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d1E0PT843S3n3Phu/giphy.gif)
+![Osint One LIners Cheat Sheet](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGNpdmh4c2c1dTI3aG9yZW8wdW81OGNzdzJxcXdjYndudXdyc2N1bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6YgphNy4s4MGQyuQ/giphy.gif)
 
 A collection of powerful one-liner commands for Open-Source Intelligence (OSINT) gathering. This repository provides quick and efficient command-line solutions to extract valuable information from public sources, including domain reconnaissance, social media analysis, metadata extraction, and more. Perfect for security researchers, bug bounty hunters, and ethical hackers looking to automate OSINT tasks with minimal effort.
 
