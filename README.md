@@ -208,6 +208,8 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 ### 🔑 Searching for Leaked Credentials
 - **Check if an Email is Breached**  
   🔗 [Have I Been Pwned](https://haveibeenpwned.com)
+- **Check if an Email is Compromised by Infostealer Malware**  
+🔗 [Hudson Rock](https://www.hudsonrock.com/threat-intelligence-cybercrime-tools)
 - **Look for Exposed Passwords on Dark Web**  
   ```bash
   site:darksearch.io "email@example.com"
