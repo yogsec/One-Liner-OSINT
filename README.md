@@ -4,21 +4,10 @@
 
 A collection of powerful one-liner commands for Open-Source Intelligence (OSINT) gathering. This repository provides quick and efficient command-line solutions to extract valuable information from public sources, including domain reconnaissance, social media analysis, metadata extraction, and more. Perfect for security researchers, bug bounty hunters, and ethical hackers looking to automate OSINT tasks with minimal effort.
 
-<div align="center">
-      <a href="https://www.whatsapp.com/channel/0029Vb68FeRFnSzGNOZC3h3x"><img src="https://img.shields.io/static/v1?style=for-the-badge&amp;message=WhatsApp+Channel&amp;color=25D366&amp;logo=&amp;logoColor=FFFFFF&amp;label=" alt="WhatsApp Channel"></a>
-  <a href="https://t.me/HackerSecure"><img src="https://img.shields.io/static/v1?style=for-the-badge&amp;message=Telegram+Channel&amp;color=24A1DE&amp;logo=&amp;logoColor=FFFFFF&amp;label=" alt="Telegram Channel"></a>
-  <a href="https://www.linkedin.com/in/cybersecurity-pentester/"><img src="https://img.shields.io/static/v1?style=for-the-badge&amp;message=LinkedIn&amp;color=0A66C2&amp;logo=LinkedIn&amp;logoColor=FFFFFF&amp;label=" alt="LinkedIn"></a>
-  <a href="https://linktr.ee/yogsec"><img src="https://img.shields.io/static/v1?style=for-the-badge&amp;message=LinkTree&amp;color=25D366&amp;logo=&amp;logoColor=FFFFFF&amp;label=" alt="WhatsApp Channel"></a>
-  <a href="https://x.com/home"><img src="https://img.shields.io/static/v1?style=for-the-badge&amp;message=X&amp;color=000000&amp;logo=&amp;logoColor=FFFFFF&amp;label=" alt="Lichess"></a>
-  <a href="mailto:abhinavsingwal@gmail.com?subject=Hi%20YogSec%20,%20nice%20to%20meet%20you!"><img alt="Email" src="https://img.shields.io/static/v1?style=for-the-badge&amp;message=Gmail&amp;color=EA4335&amp;logo=Gmail&amp;logoColor=FFFFFF&amp;label="></a>
-  <a href="https://yogsec.github.io/yogsec/"><img src="https://img.shields.io/static/v1?style=for-the-badge&amp;message=Website&amp;color=FFFFC5&amp;logo=&amp;logoColor=FFFFFF&amp;label=" alt="Telegram Channel"></a>  
-  
-</div>
-
 ---
 
-## **🔍 OSINT Dorks for Finding Personal Information**
-### **📧 Email & Contact Information**
+## **OSINT Dorks for Finding Personal Information**
+### **Email & Contact Information**
 - **Find a person's email address**:  
   ```bash
   "John Doe" "@gmail.com" | "@yahoo.com" | "@outlook.com" -www
@@ -72,7 +61,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   "John Doe" site:flickr.com | site:500px.com | site:pinterest.com
   ```
 
-### **📜 Resumes, CVs, & Work History**
+### **Resumes, CVs, & Work History**
 - **Find someone's resume or CV**:  
   ```bash
   "John Doe" filetype:pdf | filetype:doc "resume" | "curriculum vitae"
@@ -88,8 +77,8 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **🔍 OSINT Dorks for Finding Organizational Information**
-### **🏢 Subdomains & Infrastructure**
+## **OSINT Dorks for Finding Organizational Information**
+### **Subdomains & Infrastructure**
 - **Find all subdomains of a company**:  
   ```bash
   site:*.targetcompany.com -www
@@ -115,7 +104,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   site:targetcompany.com inurl:admin | inurl:dashboard | inurl:login
   ```
 
-### **🔎 Leaks & Security Issues**
+### **Leaks & Security Issues**
 - **Search for past security incidents**:  
   ```bash
   "targetcompany.com" "data breach" | "leaked database"
@@ -131,7 +120,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   
   ---
 
-### 🔍 Finding Emails & Credentials
+### Finding Emails & Credentials
 - **Locate Publicly Available Emails**  
   ```bash
   site:pastebin.com OR site:throwbin.io "@gmail.com" OR "@yahoo.com"
@@ -145,7 +134,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   site:linkedin.com "@company.com"
   ```
 
-### 📜 Finding Confidential Files
+### Finding Confidential Files
 - **Look for Sensitive PDF Documents**  
   ```bash
   filetype:pdf OR filetype:docx "confidential" OR "internal"
@@ -159,7 +148,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   intitle:"index of" "ftp" site:target.com
   ```
 
-### 📂 Exposed Databases
+### Exposed Databases
 - **Unprotected MongoDB Instances**  
   ```bash
   inurl:27017 "_id"
@@ -175,8 +164,8 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## 🕵️‍♂️ OSINT on People
-### 🔍 Social Media Investigation
+## OSINT on People
+### Social Media Investigation
 - **Find Profiles Across Social Platforms**  
   ```bash
   site:facebook.com OR site:twitter.com OR site:instagram.com "John Doe"
@@ -190,7 +179,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   site:facebook.com "John Doe" "New York"
   ```
 
-### 📍 Geolocation Tracking
+### Geolocation Tracking
 - **Search Tweets from a Specific Area**  
   ```bash
   site:twitter.com "New York" geocode:40.7128,-74.0060,5km
@@ -200,14 +189,14 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   exiftool image.jpg
   ```
 - **Perform Reverse Image Search**  
-  🔗 [Google Reverse Image Search](https://images.google.com)
+  [Google Reverse Image Search](https://images.google.com)
 
 ---
 
-## 📡 Dark Web & Leaked Data OSINT
-### 🔑 Searching for Leaked Credentials
+## Dark Web & Leaked Data OSINT
+### Searching for Leaked Credentials
 - **Check if an Email is Breached**  
-  🔗 [Have I Been Pwned](https://haveibeenpwned.com)
+  [Have I Been Pwned](https://haveibeenpwned.com)
 - **Look for Exposed Passwords on Dark Web**  
   ```bash
   site:darksearch.io "email@example.com"
@@ -217,7 +206,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   site:pastebin.com "password" OR "login"
   ```
 
-### 📁 Discovering Exposed Files
+### Discovering Exposed Files
 - **Search Government & Military Docs**  
   ```bash
   site:gov OR site:mil filetype:pdf "confidential"
@@ -233,8 +222,8 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## 🔍 OSINT on Organizations
-### 🌎 Subdomain & Infrastructure Discovery
+## OSINT on Organizations
+### Subdomain & Infrastructure Discovery
 - **Find Hidden Subdomains**  
   ```bash
   subfinder -d target.com
@@ -244,7 +233,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   site:target.com "api/v1/"
   ```
 
-### 🔗 Employee & Corporate Intelligence
+### Employee & Corporate Intelligence
 - **Look for Employee LinkedIn Profiles**  
   ```bash
   site:linkedin.com "company.com"
@@ -260,8 +249,8 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## ⚡ OSINT Automation Tools
-### 🛠 Recon & Intelligence Gathering
+## OSINT Automation Tools
+### Recon & Intelligence Gathering
 - **SpiderFoot** – Automated OSINT tool  
   ```bash
   spiderfoot -s target.com
@@ -279,7 +268,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   metagoofil -d target.com -t pdf -o results/
   ```
 
-### 📢 Social Media OSINT
+### Social Media OSINT
 - **Sherlock** – Locate Social Media Accounts  
   ```bash
   sherlock username
@@ -289,18 +278,18 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   instaloader --login username target_account
   ```
 
-### 🌍 Geolocation & Image OSINT
+### Geolocation & Image OSINT
 - **ExifTool** – Extract Metadata from Images  
   ```bash
   exiftool image.jpg
   ```
 - **Reverse Image Search on Google**  
-  🔗 [Google Images](https://images.google.com)
+  [Google Images](https://images.google.com)
 
 ---
 
 
-### **🔎 Advanced Google Dorks for People & Organizations**
+### **Advanced Google Dorks for People & Organizations**
 - **Find Personal Information on a Website**
   ```bash
   site:target.com intext:"phone number" OR "email" OR "address"
@@ -318,7 +307,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   intitle:"index of" "ftp" site:target.com
   ```
 
-### **📍 Find Hidden Data & Cached Info**
+### **Find Hidden Data & Cached Info**
 - **Search in Google Cache**
   ```bash
   cache:target.com
@@ -334,12 +323,12 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **🕵️‍♂️ OSINT on People (Personal Reconnaissance)**
-### **🔎 Find Someone's Digital Footprint**
+## **OSINT on People (Personal Reconnaissance)**
+### **Find Someone's Digital Footprint**
 - **People Search Engines**  
-  - 🔗 [https://pipl.com](https://pipl.com)  
-  - 🔗 [https://thatsthem.com](https://thatsthem.com)  
-  - 🔗 [https://www.spokeo.com](https://www.spokeo.com)  
+  - [https://pipl.com](https://pipl.com)  
+  - [https://thatsthem.com](https://thatsthem.com)  
+  - [https://www.spokeo.com](https://www.spokeo.com)  
 
 - **Find Phone Numbers & Emails**
   ```bash
@@ -350,7 +339,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   site:linkedin.com OR site:facebook.com "email@example.com"
   ```
 
-### **👀 Social Media Intelligence (SOCMINT)**
+### **Social Media Intelligence (SOCMINT)**
 - **Find All Social Media Accounts for a Username**
   ```bash
   site:twitter.com OR site:instagram.com OR site:facebook.com "username"
@@ -370,8 +359,8 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **📍 Geolocation OSINT**
-### **🔎 Track Location from Photos**
+## **Geolocation OSINT**
+### **Track Location from Photos**
 - **Extract GPS from Image Metadata**
   ```bash
   exiftool image.jpg
@@ -385,10 +374,10 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   site:twitter.com "New York" geocode:40.7128,-74.0060,5km
   ```
 
-### **🔎 Reverse Image Search**
+### **Reverse Image Search**
 - **Find Someone’s Profile Picture on Other Sites**
-  🔗 [https://www.tineye.com](https://www.tineye.com)  
-  🔗 [https://images.google.com](https://images.google.com)  
+  [https://www.tineye.com](https://www.tineye.com)  
+  [https://images.google.com](https://images.google.com)  
 
 - **Find Images in Cached Archives**
   ```bash
@@ -397,10 +386,10 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **💾 Leaked Database & Dark Web OSINT**
-### **🔑 Find Leaked Emails & Passwords**
+## **Leaked Database & Dark Web OSINT**
+### **Find Leaked Emails & Passwords**
 - **Check if an Email is Breached**
-  🔗 [https://haveibeenpwned.com](https://haveibeenpwned.com)  
+  [https://haveibeenpwned.com](https://haveibeenpwned.com)  
 - **Find Leaked Databases on Pastebin**
   ```bash
   site:pastebin.com "password" "target.com"
@@ -410,7 +399,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   site:darksearch.io "email@example.com"
   ```
 
-### **📂 Find Exposed Databases**
+### **Find Exposed Databases**
 - **Search for Open MongoDB**
   ```bash
   inurl:27017 "_id"
@@ -426,8 +415,8 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **📡 OSINT on Organizations**
-### **🔎 Subdomain & Infrastructure Recon**
+## **OSINT on Organizations**
+### **Subdomain & Infrastructure Recon**
 - **Find Hidden Subdomains**
   ```bash
   subfinder -d target.com
@@ -437,15 +426,15 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   site:target.com "api/v1/"
   ```
 
-### **🔗 Find Employee Emails**
+### **Find Employee Emails**
 - **Find Company Email Patterns with Hunter.io**  
-  🔗 [https://hunter.io](https://hunter.io)  
+  [https://hunter.io](https://hunter.io)  
 - **Search for Leaked Employee Emails**
   ```bash
   site:linkedin.com "@target.com"
   ```
 
-### **🔎 Detect Exposed Cloud Storage**
+### **Detect Exposed Cloud Storage**
 - **Find Public Google Drive Links**
   ```bash
   site:drive.google.com "confidential"
@@ -457,8 +446,8 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **🚀 OSINT Automation Tools**
-### **🔎 Comprehensive OSINT Frameworks**
+## **OSINT Automation Tools**
+### **Comprehensive OSINT Frameworks**
 - **SpiderFoot** – Automated OSINT tool  
   ```bash
   spiderfoot -s target.com
@@ -468,7 +457,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   theHarvester -d target.com -b all
   ```
 
-### **⚡ Fast Recon Tools**
+### **Fast Recon Tools**
 - **Amass** – Network mapping & reconnaissance  
   ```bash
   amass enum -d target.com
@@ -478,14 +467,14 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   metagoofil -d target.com -t pdf -o results/
   ```
 - **Maltego** – Visualize OSINT data connections  
-  🔗 [https://www.maltego.com](https://www.maltego.com)  
+  [https://www.maltego.com](https://www.maltego.com)  
 
 ---
 
 
-### **📍 Find Deleted & Cached Information**
+### **Find Deleted & Cached Information**
 - **Wayback Machine (Internet Archive)** – View old versions of websites  
-  🔗 [https://web.archive.org](https://web.archive.org)  
+  [https://web.archive.org](https://web.archive.org)  
   ```bash
   curl "http://web.archive.org/cdx/search/cdx?url=target.com&output=json"
   ```
@@ -498,7 +487,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   inurl:cache:target.com
   ```
 
-### **🔍 Extract Content from Websites**
+### **Extract Content from Websites**
 - **HTTrack** – Clone websites for offline analysis  
   ```bash
   httrack https://target.com
@@ -514,13 +503,13 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **🕵️‍♂️ OSINT on People (Personal Intelligence)**
-### **🔎 Find Hidden Personal Information**
+## **OSINT on People (Personal Intelligence)**
+### **Find Hidden Personal Information**
 - **People Search Engines**  
-  - 🔗 [https://www.spokeo.com](https://www.spokeo.com)  
-  - 🔗 [https://pipl.com](https://pipl.com)  
-  - 🔗 [https://thatsthem.com](https://thatsthem.com)  
-  - 🔗 [https://peekyou.com](https://peekyou.com)  
+  - [https://www.spokeo.com](https://www.spokeo.com)  
+  - [https://pipl.com](https://pipl.com)  
+  - [https://thatsthem.com](https://thatsthem.com)  
+  - [https://peekyou.com](https://peekyou.com)  
 
 - **Find Phone Numbers & Emails**  
   ```bash
@@ -535,9 +524,9 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   inurl:profile "username"
   ```
 
-### **👤 Find Personal Email Addresses**
+### **Find Personal Email Addresses**
 - **Hunter.io** – Find email patterns from company domains  
-  🔗 [https://hunter.io](https://hunter.io)  
+  [https://hunter.io](https://hunter.io)  
 - **Holehe** – Check if an email is linked to online accounts  
   ```bash
   holehe email@example.com
@@ -549,19 +538,19 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **📌 Find Geolocation & Address Details**
-### **📍 Extract GPS from Images**
+## **Find Geolocation & Address Details**
+### **Extract GPS from Images**
 - **ExifTool** – Extract geolocation from images  
   ```bash
   exiftool image.jpg
   ```
 - **Google Earth Historical Imagery** – View past satellite images  
-  🔗 [https://earth.google.com](https://earth.google.com)  
+  [https://earth.google.com](https://earth.google.com)  
 
-### **🗺️ Find Someone’s Address**
+### **Find Someone’s Address**
 - **WhitePages & PeopleFinders**  
-  - 🔗 [https://www.whitepages.com](https://www.whitepages.com)  
-  - 🔗 [https://www.peoplefinders.com](https://www.peoplefinders.com)  
+  - [https://www.whitepages.com](https://www.whitepages.com)  
+  - [https://www.peoplefinders.com](https://www.peoplefinders.com)  
 
 - **Reverse Address Lookup**
   ```bash
@@ -570,18 +559,18 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **💾 Leaked Database & Credential Hunting**
-### **🔑 Find Leaked Passwords**
+## **Leaked Database & Credential Hunting**
+### **Find Leaked Passwords**
 - **Have I Been Pwned?** – Check if email is breached  
-  🔗 [https://haveibeenpwned.com](https://haveibeenpwned.com)  
+  [https://haveibeenpwned.com](https://haveibeenpwned.com)  
 - **H8mail** – Search for leaked credentials  
   ```bash
   h8mail -t email@example.com
   ```
 - **BreachForums (Mirror)** – Search data leaks  
-  🔗 [https://breachforums.st](https://breachforums.st)  
+  [https://breachforums.st](https://breachforums.st)  
 
-### **📂 Search for Exposed Databases**
+### **Search for Exposed Databases**
 - **Find Public MongoDB Databases**
   ```bash
   inurl:27017 "MongoDB"
@@ -597,10 +586,10 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **🔎 Deep Web & Dark Web OSINT**
-### **🛑 Search Hidden Onion Sites**
+## **Deep Web & Dark Web OSINT**
+### **Search Hidden Onion Sites**
 - **Ahmia** – Search the dark web  
-  🔗 [https://ahmia.fi](https://ahmia.fi)  
+  [https://ahmia.fi](https://ahmia.fi)  
 - **TorBot** – Automate OSINT on onion sites  
   ```bash
   git clone https://github.com/DedSecInside/TorBot.git
@@ -610,16 +599,16 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   python3 onionsearch.py target
   ```
 
-### **📡 Scan Deep Web Data Leaks**
+### **Scan Deep Web Data Leaks**
 - **DarkSearch.io** – Search dark web leaks  
-  🔗 [https://darksearch.io](https://darksearch.io)  
+  [https://darksearch.io](https://darksearch.io)  
 - **IntelX** – Search breached data  
-  🔗 [https://intelx.io](https://intelx.io)  
+  [https://intelx.io](https://intelx.io)  
 
 ---
 
-## **🛠️ Subdomain & Website OSINT**
-### **🔎 Find Hidden Subdomains**
+## **Subdomain & Website OSINT**
+### **Find Hidden Subdomains**
 - **Subfinder** – Collect subdomains  
   ```bash
   subfinder -d target.com
@@ -629,7 +618,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   amass enum -d target.com
   ```
 
-### **🔗 Discover Public API Endpoints**
+### **Discover Public API Endpoints**
 - **Find API Keys in GitHub**
   ```bash
   site:github.com "api_key" "target.com"
@@ -641,8 +630,8 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **🚀 Automated OSINT Tools**
-### **🔎 OSINT Frameworks**
+## **Automated OSINT Tools**
+### **OSINT Frameworks**
 - **SpiderFoot** – Full OSINT automation  
   ```bash
   spiderfoot -s target.com
@@ -652,49 +641,49 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   metagoofil -d target.com -t pdf -o results/
   ```
 
-### **⚡ Fast Data Gathering**
+### **Fast Data Gathering**
 - **theHarvester** – Find emails, subdomains, and metadata  
   ```bash
   theHarvester -d target.com -b all
   ```
 - **Maltego** – Visualize OSINT data connections  
-  🔗 [https://www.maltego.com](https://www.maltego.com)  
+  [https://www.maltego.com](https://www.maltego.com)  
 
 ---
 
 
-### **📍 Find Hidden Data & Leaks**
+### **Find Hidden Data & Leaks**
 - **Shodan** – Search for exposed servers, IoT devices  
-  🔗 [https://www.shodan.io](https://www.shodan.io)  
+  [https://www.shodan.io](https://www.shodan.io)  
   ```bash
   shodan search "Default password"
   ```
 - **Censys** – Find exposed devices, certificates, open ports  
-  🔗 [https://censys.io](https://censys.io)  
+  [https://censys.io](https://censys.io)  
   ```bash
   censys search target.com
   ```
 - **ZoomEye** – Chinese version of Shodan with more results  
-  🔗 [https://www.zoomeye.org](https://www.zoomeye.org)  
+  [https://www.zoomeye.org](https://www.zoomeye.org)  
 - **BinaryEdge** – Advanced IP and port scanning  
-  🔗 [https://www.binaryedge.io](https://www.binaryedge.io)  
+  [https://www.binaryedge.io](https://www.binaryedge.io)  
 
-### **📂 Data Breach & Credential Lookups**
+### **Data Breach & Credential Lookups**
 - **WeLeakInfo (Mirror)** – Search for exposed credentials  
-  🔗 [https://weleakinfo.to](https://weleakinfo.to)  
+  [https://weleakinfo.to](https://weleakinfo.to)  
 - **LeaksDB** – Find leaked usernames and passwords  
-  🔗 [https://leaksdb.com](https://leaksdb.com)  
+  [https://leaksdb.com](https://leaksdb.com)  
 - **Snusbase** – Advanced breach database  
-  🔗 [https://snusbase.com](https://snusbase.com)  
+  [https://snusbase.com](https://snusbase.com)  
 - **Scylla.sh** – Search credentials from past dumps  
-  🔗 [https://scylla.sh](https://scylla.sh)  
+  [https://scylla.sh](https://scylla.sh)  
 
 ---
 
-## **🕵️ Social Media Intelligence (SOCMINT)**
-### **🔍 Find Hidden Social Media Accounts**
+## **Social Media Intelligence (SOCMINT)**
+### **Find Hidden Social Media Accounts**
 - **WhatsMyName** – Search username across multiple platforms  
-  🔗 [https://whatsmyname.app](https://whatsmyname.app)  
+  [https://whatsmyname.app](https://whatsmyname.app)  
 - **Sherlock** – Find accounts linked to a username  
   ```bash
   python3 sherlock.py username
@@ -704,15 +693,15 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   python3 maigret.py username
   ```
 
-### **📸 Reverse Image Search on Social Media**
+### **Reverse Image Search on Social Media**
 - **Yandex** – Best for finding hidden social media profiles  
-  🔗 [https://yandex.com/images](https://yandex.com/images)  
+  [https://yandex.com/images](https://yandex.com/images)  
 - **Google Lens** – Identifies faces, places, and objects  
-  🔗 [https://lens.google](https://lens.google)  
+  [https://lens.google](https://lens.google)  
 - **PimEyes** – AI-powered face recognition  
-  🔗 [https://pimeyes.com](https://pimeyes.com)  
+  [https://pimeyes.com](https://pimeyes.com)  
 
-### **📍 Track Geolocation Data**
+### **Track Geolocation Data**
 - **GeoCreepy** – Extracts geolocation from social media posts  
   ```bash
   git clone https://github.com/ilektrojohn/creepy.git
@@ -722,14 +711,14 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   exiftool image.jpg
   ```
 - **Google Earth Historical Imagery** – View past satellite images  
-  🔗 [https://earth.google.com](https://earth.google.com)  
+  [https://earth.google.com](https://earth.google.com)  
 
 ---
 
-## **🔑 Extract Metadata & Documents**
-### **📂 Hidden Metadata in Files**
+## **Extract Metadata & Documents**
+### **Hidden Metadata in Files**
 - **FOCA** – Extracts metadata from documents, PDFs  
-  🔗 [https://elevenpaths.com/foca](https://elevenpaths.com/foca)  
+  [https://elevenpaths.com/foca](https://elevenpaths.com/foca)  
 - **ExifTool** – Extract hidden details from images and documents  
   ```bash
   exiftool document.docx
@@ -739,12 +728,12 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   strings target.pdf
   ```
 - **Metadata2Go** – Online metadata extraction  
-  🔗 [https://www.metadata2go.com](https://www.metadata2go.com)  
+  [https://www.metadata2go.com](https://www.metadata2go.com)  
 
 ---
 
-## **📡 Subdomain & Website Enumeration**
-### **🔍 Find Hidden Subdomains**
+## **Subdomain & Website Enumeration**
+### **Find Hidden Subdomains**
 - **Subfinder** – Finds subdomains via multiple sources  
   ```bash
   subfinder -d target.com
@@ -754,9 +743,9 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   findomain -t target.com
   ```
 - **CRT.sh** – Find SSL certificates linked to subdomains  
-  🔗 [https://crt.sh](https://crt.sh)  
+  [https://crt.sh](https://crt.sh)  
 
-### **🛠️ Find Exposed Directories**
+### **Find Exposed Directories**
 - **GoBuster** – Find hidden directories and files  
   ```bash
   gobuster dir -u target.com -w wordlist.txt
@@ -768,8 +757,8 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **🔎 Google Dorks (More Advanced)**
-### **🗂️ Find Exposed Databases**
+## **Google Dorks (More Advanced)**
+### **Find Exposed Databases**
 - **Search for SQL dumps**  
   ```bash
   inurl:.sql filetype:sql
@@ -783,7 +772,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   inurl:27017 filetype:log
   ```
 
-### **📄 Find Sensitive Documents**
+### **Find Sensitive Documents**
 - **Find internal reports**  
   ```bash
   site:target.com filetype:pdf "confidential"
@@ -799,8 +788,8 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **💾 Data Breach & Credential Automation**
-### **📂 Check If an Email Is in a Breach**
+## **Data Breach & Credential Automation**
+### **Check If an Email Is in a Breach**
 - **Holehe** – Check if an email is linked to social accounts  
   ```bash
   holehe email@example.com
@@ -814,7 +803,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   python3 ghunt.py email@example.com
   ```
 
-### **🚀 Dark Web Data Mining**
+### **Dark Web Data Mining**
 - **TorBot** – Automates OSINT on dark web sites  
   ```bash
   git clone https://github.com/DedSecInside/TorBot.git
@@ -827,33 +816,33 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 ---
 
 
-### **🔎 People & Organization Searches**
+### **People & Organization Searches**
 - **Intelius** – Background checks, addresses, phone numbers  
-  🔗 [https://www.intelius.com](https://www.intelius.com)  
+  [https://www.intelius.com](https://www.intelius.com)  
 - **PeekYou** – Finds social media profiles and online presence  
-  🔗 [https://www.peekyou.com](https://www.peekyou.com)  
+  [https://www.peekyou.com](https://www.peekyou.com)  
 - **Pipl** – Deep web search for emails, numbers, social links  
-  🔗 [https://pipl.com](https://pipl.com)  
+  [https://pipl.com](https://pipl.com)  
 - **Spokeo** – Search for personal details, addresses, relatives  
-  🔗 [https://www.spokeo.com](https://www.spokeo.com)  
+  [https://www.spokeo.com](https://www.spokeo.com)  
 
-### **📝 Leaked Data & Breach Searches**
+### **Leaked Data & Breach Searches**
 - **Have I Been Pwned** – Check if an email is in a data breach  
-  🔗 [https://haveibeenpwned.com](https://haveibeenpwned.com)  
+  [https://haveibeenpwned.com](https://haveibeenpwned.com)  
 - **DeHashed** – Advanced search for breached credentials  
-  🔗 [https://www.dehashed.com](https://www.dehashed.com)  
+  [https://www.dehashed.com](https://www.dehashed.com)  
 - **LeakCheck** – Finds leaked passwords, usernames, emails  
-  🔗 [https://leakcheck.io](https://leakcheck.io)  
+  [https://leakcheck.io](https://leakcheck.io)  
 - **IntelX** – Search dark web leaks, emails, pastes  
-  🔗 [https://intelx.io](https://intelx.io)  
+  [https://intelx.io](https://intelx.io)  
 
-### **🧕️ Dark Web & Underground Searches**
+### **Dark Web & Underground Searches**
 - **Ahmia** – Search the Tor network  
-  🔗 [https://ahmia.fi](https://ahmia.fi)  
+  [https://ahmia.fi](https://ahmia.fi)  
 - **OnionLand Search** – Index of hidden .onion sites  
-  🔗 [https://onionlandsearchengine.com](https://onionlandsearchengine.com)  
+  [https://onionlandsearchengine.com](https://onionlandsearchengine.com)  
 - **DarkSearch** – Crawls dark web marketplaces, forums  
-  🔗 [https://darksearch.io](https://darksearch.io)  
+  [https://darksearch.io](https://darksearch.io)  
 - **TorBot** – Open-source dark web search tool  
   ```bash
   git clone https://github.com/DedSecInside/TorBot.git
@@ -861,8 +850,8 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 
 ---
 
-## **📎 Advanced Metadata & Document Analysis**
-### **🔑 Extract Metadata from Images & Documents**
+## **Advanced Metadata & Document Analysis**
+### **Extract Metadata from Images & Documents**
 - **ExifTool** – Extract metadata from photos, PDFs, docs  
   ```bash
   exiftool target.jpg
@@ -876,22 +865,22 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   pdf-parser target.pdf
   ```
 - **OpenMetadata** – Online metadata extractor  
-  🔗 [https://metapicz.com](https://metapicz.com)  
+  [https://metapicz.com](https://metapicz.com)  
 
-### **🔍 Reverse Image & Facial Recognition**
+### **Reverse Image & Facial Recognition**
 - **Google Lens** – Reverse image search  
-  🔗 [https://lens.google](https://lens.google)  
+  [https://lens.google](https://lens.google)  
 - **Yandex Images** – More accurate than Google for faces  
-  🔗 [https://yandex.com/images](https://yandex.com/images)  
+  [https://yandex.com/images](https://yandex.com/images)  
 - **PimEyes** – AI-powered face recognition  
-  🔗 [https://pimeyes.com](https://pimeyes.com)  
+  [https://pimeyes.com](https://pimeyes.com)  
 - **TinEye** – Reverse image lookup  
-  🔗 [https://tineye.com](https://tineye.com)  
+  [https://tineye.com](https://tineye.com)  
 
 ---
 
-## **🚀 Automated OSINT Tools**
-### **🐾 Subdomain & Website Enumeration**
+## **Automated OSINT Tools**
+### **Subdomain & Website Enumeration**
 - **Sublist3r** – Find subdomains of a target  
   ```bash
   python sublist3r.py -d target.com
@@ -901,19 +890,19 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
   amass enum -d target.com
   ```
 - **CRT.sh** – Find SSL certificates revealing hidden subdomains  
-  🔗 [https://crt.sh](https://crt.sh)  
+  [https://crt.sh](https://crt.sh)  
 
-### **📞 Phone Number Intelligence**
+### **Phone Number Intelligence**
 - **NumVerify** – Check phone number validity  
-  🔗 [https://numverify.com](https://numverify.com)  
+  [https://numverify.com](https://numverify.com)  
 - **Truecaller** – Find registered names of phone numbers  
-  🔗 [https://www.truecaller.com](https://www.truecaller.com)  
+  [https://www.truecaller.com](https://www.truecaller.com)  
 - **OSINTFramework** – Collection of phone lookup resources  
-  🔗 [https://osintframework.com](https://osintframework.com)  
+  [https://osintframework.com](https://osintframework.com)  
 
 ---
 
-## **🔍 Google Dorks (More Advanced)**
+## **Google Dorks (More Advanced)**
 - **Find plaintext passwords**  
   ```bash
   intext:"password" filetype:log
@@ -930,7 +919,7 @@ A collection of powerful one-liner commands for Open-Source Intelligence (OSINT)
 ---
 
 
-### 📧 Email & Contact Information
+### Email & Contact Information
 Find all email formats used by a company:
 ```bash
 site:targetcompany.com "@targetcompany.com"
@@ -941,7 +930,7 @@ Search for leaked emails:
 "john.doe@email.com" site:pastebin.com | site:breachforums.st
 ```
 
-### 📱 Phone Numbers & Messaging Apps
+### Phone Numbers & Messaging Apps
 Look for leaked phone numbers:
 ```bash
 "+123456789" site:pastebin.com | site:throwbin.io
@@ -952,7 +941,7 @@ Find if a number is linked to Telegram:
 site:t.me "+123456789"
 ```
 
-### 🔗 Social Media & Online Presence
+### Social Media & Online Presence
 Find hidden social media profiles:
 ```bash
 "John Doe" site:linkedin.com | site:facebook.com | site:instagram.com
@@ -963,7 +952,7 @@ Locate images of a person:
 site:instagram.com "John Doe" | site:flickr.com "John Doe"
 ```
 
-### 🏢 Company Subdomains & Infrastructure
+### Company Subdomains & Infrastructure
 Find all subdomains of a company:
 ```bash
 site:*.targetcompany.com -www
@@ -974,7 +963,7 @@ Check for open directories:
 intitle:"index of" site:targetcompany.com
 ```
 
-### 🔑 API Keys & Credentials
+### API Keys & Credentials
 Find API keys leaked in GitHub repositories:
 ```bash
 site:github.com "api_key" | "AWS_SECRET" | "password" targetcompany.com
@@ -985,7 +974,7 @@ Search for environment files:
 site:targetcompany.com ext:env "DB_PASSWORD" | "SECRET_KEY"
 ```
 
-### 🕵️ Leaks & Security Issues
+### Leaks & Security Issues
 Find leaked internal documents:
 ```bash
 site:targetcompany.com ext:pdf | ext:doc "confidential"
@@ -999,7 +988,7 @@ Look for mentions of a company in hacking forums:
 ---
 
 
-## **🔍 Google Dorks for Personal OSINT**
+## **Google Dorks for Personal OSINT**
 - **Find social media profiles**:  
   ```bash
   "John Doe" site:facebook.com | site:twitter.com | site:linkedin.com | site:instagram.com
@@ -1035,7 +1024,7 @@ Look for mentions of a company in hacking forums:
 
 ---
 
-## **🔍 Google Dorks for Organizations**
+## **Google Dorks for Organizations**
 - **Find subdomains of a company**:  
   ```bash
   site:*.targetcompany.com -www
@@ -1075,7 +1064,7 @@ Look for mentions of a company in hacking forums:
 
 ---
 
-## **🔍 Bing & Yandex Dorks for Personal & Organization OSINT**
+## **Bing & Yandex Dorks for Personal & Organization OSINT**
 - **Find person’s profiles on lesser-known sites**:  
   ```bash
   "John Doe" site:myspace.com | site:medium.com | site:tumblr.com
@@ -1094,8 +1083,8 @@ Look for mentions of a company in hacking forums:
 
 # **OSINT for Social Media**
 
-## **🛠 Automating OSINT with APIs & Scrapers**  
-### **🚀 Twitter (X) Advanced OSINT**
+## **Automating OSINT with APIs & Scrapers**  
+### **Twitter (X) Advanced OSINT**
 ```bash
 # Extract tweets, likes, and followers via API
 twint -u username --followers --following --tweets
@@ -1123,7 +1112,7 @@ twint -s "keyword" --near "New York"
 
 ---
 
-### **📘 Facebook Advanced OSINT**
+### **Facebook Advanced OSINT**
 ```bash
 # Find all Facebook groups a user is in  
 google "site:facebook.com/groups username"
@@ -1147,7 +1136,7 @@ google "site:facebook.com intext:'📍 New York'"
 
 ---
 
-### **📸 Instagram Advanced OSINT**
+### **Instagram Advanced OSINT**
 ```bash
 # Download all Instagram stories from a target  
 instaloader --stories username
@@ -1171,7 +1160,7 @@ google "site:instagram.com intext:'#hacking #cybersecurity'"
 
 ---
 
-### **💼 LinkedIn Advanced OSINT**
+### **LinkedIn Advanced OSINT**
 ```bash
 # Scrape all employees from a company  
 linkedin-scraper -c "Google"
@@ -1195,7 +1184,7 @@ shodan search "org:'LinkedIn Corp'"
 
 ---
 
-### **📺 YouTube Advanced OSINT**
+### **YouTube Advanced OSINT**
 ```bash
 # Download metadata from a YouTube channel  
 yt-dlp -J "https://www.youtube.com/c/username"
@@ -1219,7 +1208,7 @@ google "site:archive.org youtube.com/watch?v="
 
 ---
 
-### **🎵 TikTok Advanced OSINT**
+### **TikTok Advanced OSINT**
 ```bash
 # Scrape TikTok videos from a user  
 tiktok-scraper user username -n 50 -d
@@ -1243,7 +1232,7 @@ google "site:tiktok.com intext:'#OSINT #Cybersecurity'"
 
 ---
 
-### **🎯 Extra OSINT Techniques**
+### **Extra OSINT Techniques**
 ```bash
 # Reverse search social media profile pictures  
 google "site:tineye.com inurl:result image.jpg"
@@ -1263,7 +1252,7 @@ shodan search "ip:xxx.xxx.xxx.xxx"
 
 ---
 
-## **🕵️ General Social Media OSINT**
+## **General Social Media OSINT**
 ```bash
 # Find accounts linked to an email or phone
 whatsmyname -u email@example.com
@@ -1287,7 +1276,7 @@ shodan search "org:'Target ISP' http.title:'Login'"
 
 ---
 
-## **🐧 Twitter (X) OSINT**  
+## **Twitter (X) OSINT**  
 ```bash
 # Get all tweets from a specific time range
 twint -u username --since 2024-01-01 --until 2024-03-01
@@ -1315,7 +1304,7 @@ twint -u username --retweets
 
 ---
 
-## **💘 Facebook OSINT**  
+## **Facebook OSINT**  
 ```bash
 # Find a user’s Facebook ID
 curl -s "https://graph.facebook.com/username?access_token=YOUR_ACCESS_TOKEN"
@@ -1339,7 +1328,7 @@ google "site:facebook.com intext:'+1234567890'"
 
 ---
 
-## **📸 Instagram OSINT**  
+## **Instagram OSINT**  
 ```bash
 # Find Instagram accounts linked to an email
 google "site:instagram.com intext:email@example.com"
@@ -1363,7 +1352,7 @@ google "site:instagram.com inurl:tags username"
 
 ---
 
-## **💼 LinkedIn OSINT**  
+## **LinkedIn OSINT**  
 ```bash
 # Find all employees of a company
 theHarvester -d company.com -b linkedin
@@ -1387,7 +1376,7 @@ google "site:linkedin.com/in intext:'+1234567890'"
 
 ---
 
-## **📺 YouTube OSINT**  
+## **YouTube OSINT**  
 ```bash
 # Find all videos uploaded by a user
 google "site:youtube.com/c/username"
@@ -1407,7 +1396,7 @@ yt-dlp --write-auto-sub --sub-lang en --skip-download "https://www.youtube.com/c
 
 ---
 
-## **🎵 TikTok OSINT**  
+## **TikTok OSINT**  
 ```bash
 # Scrape TikTok videos from a user
 tiktok-scraper user username -n 50 -d
@@ -1423,7 +1412,7 @@ tiktok-scraper user username -d --store
 
 ---
 
-## **🐮 Reddit OSINT**  
+## **Reddit OSINT**  
 ```bash
 # Search for deleted Reddit posts
 google "site:removeddit.com user username"
@@ -1443,7 +1432,7 @@ google "site:reddit.com inurl:comments 'keyword'"
 
 ---
 
-## **🦉 GitHub OSINT**  
+## **GitHub OSINT**  
 ```bash
 # Search for exposed API keys in GitHub
 google "site:github.com intext:'AWS_SECRET_ACCESS_KEY'"
@@ -1463,7 +1452,7 @@ google "site:github.com intext:'password='"
 
 ---
 
-## **📞 Telegram OSINT**  
+## **Telegram OSINT**  
 ```bash
 # Search for Telegram groups related to a topic
 google "site:t.me keyword"
@@ -1475,7 +1464,7 @@ telegram-history-dump -c "https://t.me/group_name"
 
 ---
 
-## **📲 WhatsApp OSINT**  
+## **WhatsApp OSINT**  
 ```bash
 # Find public WhatsApp groups
 google "site:chat.whatsapp.com keyword"
@@ -1487,7 +1476,7 @@ curl -s "https://api.whatsapp.com/send?phone=+1234567890"
 
 ---
 
-## **🕵️ Advanced OSINT Tricks**
+## **Advanced OSINT Tricks**
 ```bash
 # Reverse search social media profile pictures
 google "site:tineye.com inurl:result image.jpg"
@@ -1666,7 +1655,7 @@ exiftool image.jpg
 
 # OSINT One-Liners for People Search & Email Investigation
 
-## 🔍 People Search
+## People Search
 
 - **Find social media profiles using name & location:**  
   ```bash
@@ -1689,7 +1678,7 @@ exiftool image.jpg
   site:truepeoplesearch.com "123-456-7890"
   ```
 
-## 📧 Email Investigation
+## Email Investigation
 
 - **Check if an email is in a data breach (Have I Been Pwned API):**  
   ```bash
@@ -1741,7 +1730,7 @@ exiftool image.jpg
 
 ---
 
-## 💎 Email Investigation
+## Email Investigation
 
 - **Find email aliases used by a person:**  
   ```bash
@@ -1778,7 +1767,7 @@ exiftool image.jpg
 ---
 
 
-## 👤 Advanced People Search  
+## Advanced People Search  
 - **Find hidden social media profiles using Google dorks:**  
   ```bash
   site:instagram.com | site:tiktok.com | site:twitter.com "John Doe" "New York"
@@ -1810,7 +1799,7 @@ exiftool image.jpg
 
 ---
 
-## 📧 Advanced Email Investigation  
+## Advanced Email Investigation  
 - **Extract emails from a website recursively:**  
   ```bash
   theharvester -d example.com -l 100 -b google
@@ -1882,7 +1871,7 @@ exiftool image.jpg
   site:data.gov "John Doe" OR "123-45-6789"
   ```
 
-## 📧 Email Investigation - Advanced Tactics  
+## Email Investigation - Advanced Tactics  
 - **Find websites & domains registered with an email:**  
   ```bash
   curl -s "https://www.whoxy.com/?whois=test@example.com"
@@ -1966,7 +1955,7 @@ exiftool image.jpg
   site:bbc.com OR site:cnn.com OR site:forbes.com "John Doe"
   ```
 
-## 📧 Email Investigation - Pro Level
+## Email Investigation - Pro Level
 
 - **Find alternate emails linked to a domain using Hunter.io:**  
   ```bash
@@ -2094,7 +2083,7 @@ exiftool image.jpg
   ```
 
 
-### **🚀 Twitter (X) Advanced OSINT**
+### **Twitter (X) Advanced OSINT**
 ```bash
 # Extract tweets, likes, and followers via API
 twint -u username --followers --following --tweets
@@ -2122,7 +2111,7 @@ twint -s "keyword" --near "New York"
 
 ---
 
-### **📘 Facebook Advanced OSINT**
+### **Facebook Advanced OSINT**
 ```bash
 # Find all Facebook groups a user is in  
 google "site:facebook.com/groups username"
@@ -2146,7 +2135,7 @@ google "site:facebook.com intext:'📍 New York'"
 
 ---
 
-### **📸 Instagram Advanced OSINT**
+### **Instagram Advanced OSINT**
 ```bash
 # Download all Instagram stories from a target  
 instaloader --stories username
@@ -2170,7 +2159,7 @@ google "site:instagram.com intext:'#hacking #cybersecurity'"
 
 ---
 
-### **💼 LinkedIn Advanced OSINT**
+### **LinkedIn Advanced OSINT**
 ```bash
 # Scrape all employees from a company  
 linkedin-scraper -c "Google"
@@ -2194,7 +2183,7 @@ shodan search "org:'LinkedIn Corp'"
 
 ---
 
-### **📺 YouTube Advanced OSINT**
+### **YouTube Advanced OSINT**
 ```bash
 # Download metadata from a YouTube channel  
 yt-dlp -J "https://www.youtube.com/c/username"
@@ -2218,7 +2207,7 @@ google "site:archive.org youtube.com/watch?v="
 
 ---
 
-## **🎯 Extra OSINT Techniques**
+## **Extra OSINT Techniques**
 ```bash
 # Reverse search social media profile pictures  
 google "site:tineye.com inurl:result image.jpg"
@@ -2237,7 +2226,7 @@ shodan search "ip:xxx.xxx.xxx.xxx"
 ```
 
 
-## **🕵️ General Social Media OSINT**
+## **General Social Media OSINT**
 ```bash
 # Find accounts linked to an email or phone
 whatsmyname -u email@example.com
@@ -2261,7 +2250,7 @@ shodan search "org:'Target ISP' http.title:'Login'"
 
 ---
 
-## **🔧 Twitter (X) OSINT**  
+## **Twitter (X) OSINT**  
 ```bash
 # Get all tweets from a specific time range
 twint -u username --since 2024-01-01 --until 2024-03-01
@@ -2289,7 +2278,7 @@ twint -u username --retweets
 
 ---
 
-## **👨‍👩‍👦 Facebook OSINT**  
+## **Facebook OSINT**  
 ```bash
 # Find a user’s Facebook ID
 curl -s "https://graph.facebook.com/username?access_token=YOUR_ACCESS_TOKEN"
@@ -2313,7 +2302,7 @@ google "site:facebook.com intext:'+1234567890'"
 
 ---
 
-## **📸 Instagram OSINT**  
+## **Instagram OSINT**  
 ```bash
 # Find Instagram accounts linked to an email
 google "site:instagram.com intext:email@example.com"
@@ -2337,7 +2326,7 @@ google "site:instagram.com inurl:tags username"
 
 ---
 
-## **💼 LinkedIn OSINT**  
+## **LinkedIn OSINT**  
 ```bash
 # Find all employees of a company
 theHarvester -d company.com -b linkedin
@@ -2361,7 +2350,7 @@ google "site:linkedin.com/in intext:'+1234567890'"
 
 ---
 
-## **📺 YouTube OSINT**  
+## **YouTube OSINT**  
 ```bash
 # Find all videos uploaded by a user
 google "site:youtube.com/c/username"
@@ -2381,7 +2370,7 @@ yt-dlp --write-auto-sub --sub-lang en --skip-download "https://www.youtube.com/c
 
 ---
 
-## **🎵 TikTok OSINT**  
+## **TikTok OSINT**  
 ```bash
 # Scrape TikTok videos from a user
 tiktok-scraper user username -n 50 -d
@@ -2397,7 +2386,7 @@ tiktok-scraper user username -d --store
 
 ---
 
-## **💌 WhatsApp OSINT**  
+## **WhatsApp OSINT**  
 ```bash
 # Find public WhatsApp groups
 google "site:chat.whatsapp.com keyword"
@@ -2409,7 +2398,7 @@ curl -s "https://api.whatsapp.com/send?phone=+1234567890"
 
 ---
 
-## **🔍 Advanced OSINT Tricks**  
+## **Advanced OSINT Tricks**  
 ```bash
 # Reverse search social media profile pictures
 google "site:tineye.com inurl:result image.jpg"
@@ -2427,7 +2416,7 @@ exiftool image.jpg
 shodan search "ip:xxx.xxx.xxx.xxx"
 ```
 
-## **📌 Extract Geolocation from Metadata**  
+## **Extract Geolocation from Metadata**  
 
 🔹 **Check image metadata for GPS coordinates**  
 ```bash
@@ -2446,7 +2435,7 @@ pdfinfo file.pdf
 
 ---
 
-## **📍 IP Geolocation**  
+## **IP Geolocation**  
 
 🔹 **Find location from an IP address**  
 ```bash
@@ -2470,7 +2459,7 @@ shodan host 8.8.8.8
 
 ---
 
-## **🗺 Reverse Geocoding & Mapping**  
+## **Reverse Geocoding & Mapping**  
 
 🔹 **Find address from GPS coordinates**  
 ```bash
@@ -2494,7 +2483,7 @@ https://livingatlas.arcgis.com/wayback/
 
 ---
 
-## **📌 Wi-Fi, Bluetooth, & Mobile Data OSINT**  
+## **Wi-Fi, Bluetooth, & Mobile Data OSINT**  
 
 🔹 **Find location from Wi-Fi BSSID (if known)**  
 ```bash
@@ -2518,7 +2507,7 @@ curl -s "https://opencellid.org/cell/get?mcc=310&mnc=410&lac=7033&cellid=17811&k
 
 ---
 
-## **📍 Social Media Geolocation OSINT**  
+## **Social Media Geolocation OSINT**  
 
 🔹 **Find location from Instagram post (if geotagged)**  
 ```bash
@@ -2542,7 +2531,7 @@ https://map.snapchat.com/
 
 ---
 
-## **🚗 Vehicle & Transport Tracking**  
+## **Vehicle & Transport Tracking**  
 
 🔹 **Track Uber/Lyft rides (if shared link available)**  
 ```bash
@@ -2566,7 +2555,7 @@ https://www.flightradar24.com/
 
 ---
 
-## **🛰 Satellite & Aerial OSINT**  
+## **Satellite & Aerial OSINT**  
 
 🔹 **View live satellite imagery (if available)**  
 ```bash
@@ -2583,52 +2572,52 @@ https://eos.com/landviewer/
 https://earthdata.nasa.gov/
 ```
 
-📌 **Extract GPS from images (Exif metadata)**  
+**Extract GPS from images (Exif metadata)**  
 ```bash
 exiftool image.jpg | grep -E "GPS Latitude|GPS Longitude"
 ```
 
-📍 **Reverse image search location (Google)**  
+**Reverse image search location (Google)**  
 ```bash
 curl -F 'encoded_image=@image.jpg' https://www.google.com/searchbyimage
 ```
 
-🗺 **Find location from Wi-Fi BSSID**  
+**Find location from Wi-Fi BSSID**  
 ```bash
 curl "https://wigle.net/api/v2/network/search?netid=XX:XX:XX:XX:XX:XX"
 ```
 
-📍 **Find location from an IP address**  
+**Find location from an IP address**  
 ```bash
 curl -s "http://ip-api.com/json/IP_ADDRESS"
 ```
 
-🌍 **Get geolocation from phone number**  
+**Get geolocation from phone number**  
 ```bash
 python3 phoneinfoga.py -n +1234567890
 ```
 
-📌 **Check Google Maps Timeline (if accessible)**  
+**Check Google Maps Timeline (if accessible)**  
 ```bash
 https://www.google.com/maps/timeline
 ```
 
-🛰 **Get satellite images of a location**  
+**Get satellite images of a location**  
 ```bash
 https://www.google.com/maps/place/lat,long
 ```
 
-📍 **Reverse Geocode Coordinates**  
+**Reverse Geocode Coordinates**  
 ```bash
 curl -s "https://nominatim.openstreetmap.org/reverse?format=json&lat=LAT&lon=LON"
 ```
 
-🚗 **Track Uber/Lyft ride details (if link available)**  
+**Track Uber/Lyft ride details (if link available)**  
 ```bash
 https://www.uber.com/track/XXXXXXXX
 ```
 
-🌐 **Find location from social media posts**  
+**Find location from social media posts**  
 ```bash
 https://maps.google.com/?q=LAT,LON
 ```
@@ -2688,7 +2677,7 @@ curl -s "https://www.whatdotheyknow.com/"
 curl -s "https://www.asktheeu.org/en/request/new"
 ```
 
-## 🚓 Law Enforcement & Criminal Records
+## Law Enforcement & Criminal Records
 
 ### U.S. Department of Justice Press Releases (Cases & Convictions)
 ```bash
@@ -2711,7 +2700,7 @@ curl -s "https://www.dea.gov/fugitives?q=John+Doe"
 curl -s "https://www.afp.gov.au/what-we-do/services/criminal-records"
 ```
 
-## 🏛️ Court Cases & Judgments
+## Court Cases & Judgments
 
 ### U.S. Supreme Court Case Lookup (Oyez)
 ```bash
@@ -2734,7 +2723,7 @@ curl -s "https://ecourts.gov.in/services/cases?q=John+Doe"
 curl -s "https://hudoc.echr.coe.int/eng#{%22fulltext%22:[%22John+Doe%22]}"
 ```
 
-## 💰 Financial, Banking & Tax Records
+## Financial, Banking & Tax Records
 
 ### U.S. Federal Reserve Enforcement Actions
 ```bash
@@ -2757,7 +2746,7 @@ curl -s "https://www.gov.uk/government/collections/hmrc-annual-reports"
 curl -s "https://www.bankingsupervision.europa.eu/banking/sanctions/html/index.en.html?q=John+Doe"
 ```
 
-## 🏠 Property & Real Estate Records
+## Property & Real Estate Records
 
 ### U.S. HUD Housing Data & Records
 ```bash
@@ -2776,7 +2765,7 @@ curl -s "https://landregistry.data.gov.uk/app/ppd/"
 curl -s "https://www.govdata.de/web/guest/suchen/-/results/q/immobilien"
 ```
 
-## 📡 Intelligence, Security & Military Records
+## Intelligence, Security & Military Records
 
 ### U.S. CIA FOIA Reading Room (Declassified Documents)
 ```bash
@@ -2800,7 +2789,7 @@ curl -s "https://www.russiancontracts.ru/"
 curl -s "https://www.chinadefense.com.cn/"
 ```
 
-## 👤 People, Identity & Vital Records
+## People, Identity & Vital Records
 
 ### U.S. Census Bureau Public Records Search
 ```bash
@@ -2823,7 +2812,7 @@ curl -s "https://www.bdm.vic.gov.au/research-and-family-history/search-your-fami
 curl -s "https://uidai.gov.in/ecosystem/authentication-services.html"
 ```
 
-## 🎭 Miscellaneous & Hidden OSINT Gems
+## Miscellaneous & Hidden OSINT Gems
 
 ### U.S. FCC License Database (Find Radio Operators, Companies, etc.)
 ```bash
