@@ -1906,7 +1906,7 @@ exiftool image.jpg
   ```
 - **Find disposable or temporary emails linked to a person:**  
   ```bash
-  site:temp-mail.org OR site:10minutemail.com "test@example.com"
+  site:temp-mail.org OR site:10minutemail.com OR site:mailfo.pages.dev "test@example.com"
   ```
 - **Check for SMTP open relay on an email server:**  
   ```bash
